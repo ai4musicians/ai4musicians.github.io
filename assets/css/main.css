@@ -2703,8 +2703,10 @@ input[type="radio"]+label:before {
 }
 
 .image img {
-	border-radius: 0.25em;
-	display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.25em;
+    display: block;
 }
 
 .image.left,
