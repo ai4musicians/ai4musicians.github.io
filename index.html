@@ -17,14 +17,16 @@
     <!-- Sidebar -->
     <section id="sidebar">
       <div class="inner">
+		
 	<nav>
+		
 	  <ul>
-	    <li><a href="#intro">Welcome</a></li>
-	    <li><a href="#vipteam">Research Team</a></li>
-	    <li><a href="#activities">Activities</a></li>
-	    <li><a href="#who">Who we are</a></li>
-	    <li><a href="#software">AI Software</a></li>
-	    <li><a href="#visualize">Visualize Music</a></li>
+		<li><a href="#intro"><img src="images/aim.png" width=50></img></a></li>
+		<li><a href="#evaluator">Our Projects</a></li>
+	    <li><a href="#activities">Research Areas</a></li>
+	    <li><a href="#who">Leaders</a></li>
+		<li><a href="#outreach">Outreach</a></li>
+	    <li><a href="#vipteam">VIP Team</a></li>
 	    <li><a href="#contact">Contact</a></li>
 	  </ul>
 	</nav>
@@ -37,11 +39,12 @@
       <!-- Intro -->
       <section id="intro" class="wrapper style1 fullscreen fade-up">
 	<div class="inner">
-	  <h1>AI (Artificial Intelligence) for Musicians</h1>
-	  <p>This is a Research Team Studying How Musicians can Benefit from AI (Artificial Intelligence)
-	  <p> This project is supported by the National Science
-	  Foundation <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2326198">Artificial
-	  Intelligence Technology for Future Music Performers</a>.
+		<img src="images/aim.png" width="200" alt="" data-position="top center" />
+	  <h1>Welcome to AIM.</h1>
+	  <p> <b>AIM (Artificial Intelligence for Musicians) </b> is a Purdue <b>music technology research group</b>, whose aim is to create reactive, human-like systems which support musicians during their practice sessions and performances.</p>
+	  <p> Some of AIM's projects are supported by <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2326198">a National Science Foundation grant</a>.</p>
+	  <p> We are looking for interested graduate or undergraduate students to join our team. <a href="vip_info.html">Click here for info.</a></p>
+	  <h2>See what we're making below:</h2>
 	    <!---
 	    <ul class="actions">
 	      <li><a href="#one" class="button scrolly">Learn more</a></li>
@@ -50,56 +53,115 @@
 	</div>
       </section>
 
-      <!-- VIP Team -->
-      <section id="vipteam" class="wrapper style2 fullscreen fade-up">
-	<div class="inner">
-	  <h1>Research Team</h1>
-	  <a href="#" class="image"><img src="images/vip20230831.png"  alt="" data-position="fit" /></a>
-	  <a href="#" class="image"><img src="images/companionteam20240125.jpg"  alt="" data-position="fit" /></a>
-	  <a href="#" class="image"><img src="images/motioncapture01.jpg"  alt="" data-position="fit" /></a>
-	  <a href="#" class="image"><img src="images/motioncapture02.jpg"  alt="" data-position="fit" /></a>
-	  <p>
-	</div>
-      </section>
+	<!-- Evaluator -->
+		
+	<section id="evaluator" class="wrapper style3 spotlights">
+		<section>
+		<a href="#" class="image"><img src="images/evaluator.jpg" width="300" alt="" data-position="top center" /></a> 
+		<div class="content">
+			
+		  <div class="inner">
+			<h2><a href="https://github.com/Purdue-Artificial-Intelligence-in-Music/Evaluator-code">Evaluator</a></h2>
+			<h4>Fall 2023 - present</h4>
+			<p>
+			Evaluator is an app that aims to help musicians practice more effectively. It utilizes computer vision and YOLO localization techniques to help musicians track, analyze, and improve their posture. It also uses spectrogram analysis and multi-modal transformers to help the musicians identify their mistakes in music and correct them. </p>
+			Drawing by Cecilia Ines Sanchez.
+  
+			<!---
+			<p>This project will develop and integrate techniques to create two AI-enabled tools to support string music performers. The first tool, the Evaluator, aims to improve individual practice and performance. It analyzes a musician’s sound and compares it to digitized music scores to detect deviations in intonation, rhythm, and dynamics and suggest better posture based on sample performers’ recording with correct posture. The second tool, the Companion, plays the part of one or several instruments to replace absent musicians with matching tempo, and style of the human musicians through audio analysis of their performance while also responding in real-time to verbal instructions. </p>
+			--->
+		  </div>
+		</div>
+	  </section>
+	</section>
+
+	 <!-- Companion -->
+	  <section id="companion" class="wrapper style2 spotlights">
+		<section>
+		<a href="#" class="image"><img src="images/companion.png" width="300" alt="" data-position="top center" /></a>
+		<div class="content">
+		  <div class="inner">
+			<h2><a href="https://github.com/Purdue-Artificial-Intelligence-in-Music/Companion-code">Companion</a></h2>
+			<h4>Fall 2023 - present</h4>
+			<p>
+		  Companion is an app that not only plays along with a human player during a chamber music piece, but actively responds to their playing habits and voice commands like a real human would. The project involves machine learning and filtering/DSP algorithms to analyze and edit sound quickly and accurately and utilizes small NLP language models for voice command implementation. 
+		</p>
+			Drawing by Cecilia Ines Sanchez.
+		  </div>
+		</div>
+	  </section>
+	</section>
+  
+  
+	  <!-- Visualize -->
+	  <section id="mus2vid" class="wrapper style1 spotlights">
+		<section>
+		<a href="#" class="image"><img src="images/visualizemusic.png" width="300" alt="" data-position="top center" /></a>
+		<div class="content">
+		  <div class="inner">
+			<h2><a href="https://github.com/Purdue-Artificial-Intelligence-in-Music/Mus2Vid-code">Mus2Vid</a></h2>
+			<h4>Spring 2022 - present</h4>
+			<p>Mus2Vid is a real-time art project that uses diffusion models to generate video depictions in response to classical music. It uses recurrent and transformer networks to analyze input audio and estimate its emotion and genre qualities, which are converted into text and fed to a text-to-image diffusion model to generate images.
+
+		  <ul class="actions">
+			<li><a href="visualize.html" class="button scrolly">Learn more</a></li>
+		  </ul>
+		  </div>
+		</div>
+	</section>
+	  </section>
+
+	   <!-- Robot Cello -->
+	  <section id="robotcello" class="wrapper style4 spotlights">
+		<section>
+		<iframe width="560" src="https://www.youtube.com/embed/Rf0bSJr8yFM?si=6LKA8egAhXsrftlh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	
+		<div class="content">
+		  <div class="inner">
+			<h2>Robot Cello</h2>
+			<h4>Spring 2024 - present</h4>
+			<p> As the name suggests, Robot Cello is a project about using reinforcement learning to teach a robot arm to play cello. The project is currently in its survey phase but is currently investigating using motion capture technology to get training data for an RL model. 
+			<p> We partner with the <a href="https://www.rcac.purdue.edu/envision">Purdue Envision Center</a> to collect motion data for our robot arm to train on. On the left is a video of Prof. Yun playing cello while wearing a motion-capture rig.</p>
+				  </div>
+		</div>
+	</section>
+	  </section>
 
       
       <section id="activities" class="wrapper style3 fade-up">
 	<div class="inner">
-	  <h2>Activities</h2>
-	  <p>Create AI-based software for musicians. Evaluate whether
-	  the software actually helps musicians. Educate students for
-	  AI,  software, and music performance. </p>
+	  <h2>Research Areas + Questions</h2>
+	  <p>Our projects often span most or all of these areas, as they are all important to making effective, human-like music technology.</p>
 	  <div class="features">
 	    <section>
-	      <span class="icon solid major fa-music"></span>
-	      <h3>Vertically Integrated Project</h3>
-	      <p><a href="https://engineering.purdue.edu/VIP/teams/aim">Artificial Intelligence in Music</a>
-		is an undergraduate course. Meeting time in Spring 2024: Varies by project; email below</>
+	      <span class="icon solid major fa-volume-up"></span>
+	      <h3>Generative Audio and DSP</h3>
+	      <p>How can Companion utilize machine learning and filtering to resynthesize string instrument articulations on-the-fly?</p>
 	    </section>
 	    <section>
-	      <span class="icon solid major fa-bell"></span>
-	      <h3>Multidisciplinary Research</h3>
-	      <p>This project includes students and professors from Music, Engineering, Technology, Art, and Management.</p>
+	      <span class="icon solid major fa-stopwatch"></span>
+	      <h3>Beat Detection and Tempo Tracking</h3>
+	      <p>What are the most effective methods for Companion, Evaluator, and Mus2Vid to follow a musician's playing in reference to a score, and play along to match?</p>
 	    </section>
 	    <section>
 	      <span class="icon solid major fa-eye"></span>
-	      <h3>User Studies</h3>
-	      <p>Evaluate how musicians use AI-based tools and how these tools can be improved.</p>
+	      <h3>Emotion and Perception</h3>
+	      <p>How can Mus2Vid analyze emotion of classical music in real-time and utilize it to generate real-time video accompaniments?</p>
 	    </section>
+		<section>
+			<span class="icon solid major fa-music"></span>
+			<h3>Music Classification/Information Retrieval</h3>
+			<p>What musical features extracted from various media, such as tempo, key, genre, notes, are useful to music performance technology, and how can we extract such features?</p>
+		  </section>
 	    <section>
-	      <span class="icon solid major fa-desktop"></span>
-	      <h3>Presentations</h3>
-	      <p>Gives speeches and concerts about AI and music.</p>
-	    </section>
-	    <section>
-	      <span class="icon solid major fa-volume-up"></span>
-	      <h3>Concerts </h3>
-	      <p>Demonstrate the technology.</p>
+	      <span class="icon solid major fa-users"></span>
+	      <h3>Human-Computer Interaction</h3>
+	      <p>How can our apps be designed in ways that are human-like and natural for humans to interact with?</p>
 	    </section>
 	    <section>
 	      <span class="icon major fa-comments"></span>
-	      <h3> Cello Lessons </h3>
-	      <p>Learn how to play cello, from beginners to stage performers.</p>
+	      <h3>User Studies + Deployments</h3>
+	      <p>How can we ensure that our users actually utilize and enjoy the apps we develop?</p>
 	    </section>
 	  </div>
 	  <!---
@@ -112,14 +174,16 @@
 
       
       <!-- who -->
-      <section id="who" class="wrapper style2 spotlights">
+      <section id="who" class="wrapper style5 spotlights">
 	<section>
 	  <a href="#" class="image"><img src="images/yun.jpg" width="400" alt="" data-position="top center" /></a>
 	  <div class="content">
 	    <div class="inner">
-	      <h2>Project Director: </h2>
+	      <h2>Dr. Kristen Yeon-Ji Yun </h2>
+		  <h3>Project Director</h3>
+		  <h3>Clinical Associate Professor of Music</h3>
 	      <p> <a href=https://www.cla.purdue.edu/directory/profiles/yeon-ji-kristen-yun.html>
-	      Kristen Yeon-Ji Yun</a> is a clinical associate professor of Music. </p>
+			Kristen Yeon-Ji Yun </a> is a clinical associate professor of Music. </p>
 	      <!---
 	      <ul class="actions">
 		<li><a href="generic.html" class="button">Learn more</a></li>
@@ -132,7 +196,9 @@
 	  <a href="#" class="image"><img src="images/joshkamphuis.png" width="400" alt="" data-position="top center" /></a>
 	  <div class="content">
 	    <div class="inner">
-	      <p>Josh Kamphuis is a leader of the Evaluator undergraduate research team.</p>
+		  <h2>Josh Kamphuis </h2>
+		  <h3>Evaluator Project Lead</h3>
+	      <p>Josh is a leader of the Evaluator project.</p>
 	      <!---
 	      <h2>Undergraduate Research -  MUS2VID</h2>
               <p>Real-time generation of video accompaniment for classical music </p> --->
@@ -148,39 +214,56 @@
 	  <a href="#" class="image"><img src="images/timnadolsky.jpg" width="400" alt="" data-position="top center" /></a>
 	  <div class="content">
 	    <div class="inner">
-	      <p>Tim Nadolsky is the leader of the Companion undergraduate research team.</p>
+			<h2>Tim Nadolsky </h2>
+		  <h3>Companion Project Lead</h3>
+	      <p>Tim is the leader of the Companion project, as well as an active contributor to Mus2Vid. His interests lie primarily in building software systems that exhibit emotion in human-like ways, usually through the lens of music technology. In his free time, Tim composes and produces pop/electronic music, (badly) plays the piano, and enjoys casually travelling and hiking.</p>
+		  <ul class="icons">
+			<li><a href="https://www.linkedin.com/in/timusic/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+		      </ul>
 	    </div>
 	  </div>
 	</section>
+	</section>
+	<section id="who" class="wrapper style5 spotlights">
 	<section>
 	  <a href="#" class="image"><img src="images/KareenaDPatel.jpg" width="400" alt="" data-position="top center" /></a>
 	  <div class="content">
 	    <div class="inner">
-	      <p>Kareen D Patel is an undergraduate student.</p>
+			<h2>Kareena D. Patel</h2>
+			<h3>Mus2Vid Project Lead</h3>
+	      <p>Kareena is a leader of the Mus2Vid project.</p>
 	    </div>
 	  </div>
 	</section>
+	<section>
+		<a href="#" class="image"><img src="images/haichangli.png" width="400" alt="" data-position="top center" /></a>
+		<div class="content">
+		  <div class="inner">
+			<h2>Haichang Li</h2>
+			<h3>Mus2Vid Project Lead</h3>
+			<p>Haichang is a leader of the Mus2Vid project.</p>
+		  </div>
+		</div>
+	  </section>
 	<section>
 	  <a href="#" class="image"><img src="images/SamanthaRoseSudhoff.png" width="400" alt="" data-position="top center" /></a>
 	  <div class="content">
 	    <div class="inner">
-	      <p>Samantha Rose Sudhoff is an undergraduate student.</p>
+			<h2>Samantha Rose Sudhoff</h2>
+			<h3>Robot Cello Project Lead</h3>
+	      <p>Samantha the leader of the Robot Cello project.</p>
 	    </div>
 	  </div>
 	</section>
-	<section>
-	  <a href="#" class="image"><img src="images/haichangli.png" width="400" alt="" data-position="top center" /></a>
-	  <div class="content">
-	    <div class="inner">
-	      <p>Haichang Li is the leader of the Mus2Vid undergraduate research team.</p>
-	    </div>
-	  </div>
 	</section>
+	<section id="who" class="wrapper style5 spotlights">
 	<section>
 	  <a href="#" class="image"><img src="images/brianng.png" width="400" alt="" data-position="top center" /></a>
 	  <div class="content">
 	    <div class="inner">
-	      <p>Brian Ng is an undergraduate student.</p>
+			<h2>Brian Ng</h2>
+			<h3>Former Mus2Vid Project Lead + Lab Alumni</h3>
+	      <p>Brian was a founding member of Purdue AIM. He received his B.S.CmpE. from the Purdue College of Engineering in December 2023.</p>
 	    </div>
 	  </div>
 	</section>
@@ -189,8 +272,9 @@
 	  <div class="content">
 	    <div class="inner">
 	      <p>
-	      <a href="https://polytechnic.purdue.edu/profile/chen489">
-	      Victor Yingjie Chen</a> is a professor of Computer Graphics Technology. </p>
+			<h2>Dr. Victor Yingjie Chen</h2>
+			<h3>Professor of Computer Graphics Technology</h3>
+			<a href="https://polytechnic.purdue.edu/profile/chen489">Victor Yingjie Chen</a> is a professor of Computer Graphics Technology. </p>
 	    </div>
 	  </div>
 	</section>
@@ -199,16 +283,22 @@
 	  <div class="content">
 	    <div class="inner">
 	      <p>
+			<h2>Dr. Yung-Hsiang Lu</h2>
+			<h3>Professor of Electrical and Computer Engineering</h3>
 	      <a href="https://engineering.purdue.edu/ECE/People/ptProfile?resource_id=3355l">
 	      Yung-Hsiang Lu</a> is a professor of Electrical and Computer Engineering. </p>
 	    </div>
 	  </div>
 	</section>
+	</section>
+	<section id="who" class="wrapper style5 spotlights">
 	<section>
 	  <a href="#" class="image"><img src="https://www.cla.purdue.edu/directory/images/cheryl-zhenyu-qian.jpg" width="400" alt="" data-position="top center" /></a>
 	  <div class="content">
 	    <div class="inner">
 	      <p>
+			<h2>Dr. Cheryl Zhenyu Qian</h2>
+			<h3>Professor of Industrial Design, Rueff School of Design, Art, and Performance</h3>
 	      <a href="https://www.cla.purdue.edu/directory/profiles/cheryl-zhenyu-qian.html">
 		Cheryl Zhenyu Qian</a> is a professor of Interaction Design in Industrial Design. </p>
 	    </div>
@@ -219,6 +309,8 @@
 	  <div class="content">
 	    <div class="inner">
 	      <p>
+			<h2>Dr. Mohammad Saifur Rahman</h2>
+			<h3>Professor of Management, Daniels School Chair in Management</h3>
 	      <a href="https://business.purdue.edu/directory/bio.php?username=mrahman">
 	      Mohammad Saifur Rahman</a> is the inaugural Daniels
 	      School Chair in Management and a Professor of Management
@@ -226,109 +318,72 @@
 	    </div>
 	  </div>
 	</section>
+</section>
+
+<section id="outreach" class="wrapper style3 fade-up">
+	<div class="inner">
+	  <h2>Outreach</h2>
+	  <p>Here are some of the ways AIM ensures that it is integrated with both Purdue's local community and the global community.</p>
+	  <div class="features">
+	    <section>
+	      <span class="icon solid major fa-school"></span>
+	      <h3>Vertically Integrated Project</h3>
+	      <p>AIM has an associated Vertically Integrated Project, which enables research experiences for Purdue undergraduates.
+			<ul class="actions">
+			<li><a href="#vipteam" class="button scrolly">Scroll down to learn more</a></li>
+		  </ul></p>
+	    </section>
+	    <section>
+	      <span class="icon solid major fa-microscope"></span>
+	      <h3>Multidisciplinary Research</h3>
+	      <p>Music technology is a field with very multidisciplinary problems and solutions. As such, we draw from a wide variety of departments for our talent, including Music, Electrical and Computer Engineering, Computer Science, Technology, Art, Design, and Management.</p>
+	    </section>
+	    <section>
+	      <span class="icon solid major fa-comments"></span>
+	      <h3>User Studies</h3>
+	      <p>AIM actively runs user studies on the tools that are developed to ensure that users can figure out how to use them and enjoy them.</p>
+	    </section>
+	    <section>
+	      <span class="icon solid major fa-ticket-alt"></span>
+	      <h3>Presentations/Concerts</h3>
+	      <p>AIM members have given speeches, presentations, and concerts about and using AIM technology around the world.</p>
+	    </section>
+	  </div>
+	  <!---
+	  <ul class="actions">
+	    <li><a href="generic.html" class="button">Learn more</a></li>
+	  </ul>
+	  --->
+	</div>
+      </section>
 	
-	<!---
-	<section>
-	  <a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="center center" /></a>
-	  <div class="content">
-	    <div class="inner">
-	      <h2>Undergraduate Research - Using AI to Transform Music Performers' training and practice</h2>
-	      <p>This project will investigate how AI technology could transform the work of future music performers for both individual practice and collaborative practice.  </p>
-	      <ul class="actions">
-		<li><a href="generic.html" class="button">Learn more</a></li>
-	      </ul>
-	    </div>
-	  </div>
+	<!-- VIP Team -->
+	<section id="vipteam" class="wrapper style2 fullscreen fade-up">
+		<div class="inner">
+		  <img src="images/vip-web.jpg" width="200" />
+		  <h1>Vertically Integrated Projects Team</h1>
+		  
+		  <p> AIM stands out among other music technology research groups because of its pedagogy. While other music technology groups may cater primarily to graduate students and professionals, our group is open to all Purdue students of any major and experience level. </p>
+		  <p> We hope that by helping any student interested in music technology/machine learning learn to work with these technologies, we can make a difference in these students' lives while simultaneously encouraging the adoption of music technology.</p> 
+		  <ul class="actions">
+			<li><a href="vip_info.html" class="button scrolly">Learn more</a></li>
+		  </ul>
+		  <a href="#" class="image"><img src="images/companionteam20240125.jpg"  alt="" data-position="fit" /></a>
+		</div>
 	</section>
-	--->
-	<!-- Software -->
-	<section id="software" class="wrapper style3 fade-up">
-	  <a href="#" class="image"><img src="images/evaluator.jpg" width="300" alt="" data-position="top center" /></a> 
-	  <div class="content">
-	    <div class="inner">
-	      <h2>Evaluator</h2>
-	      <p>
-		The Evaluator aims to improve individual practice and performance. It analyzes a musician’s sound and compares it to digitized music scores to detect deviations in intonation, rhythm, and dynamics and suggest better posture based on sample performers’ recording with correct posture.</p>
-	      Drawing by Cecilia Ines Sanchez.
-
-	      <!---
-	      <p>This project will develop and integrate techniques to create two AI-enabled tools to support string music performers. The first tool, the Evaluator, aims to improve individual practice and performance. It analyzes a musician’s sound and compares it to digitized music scores to detect deviations in intonation, rhythm, and dynamics and suggest better posture based on sample performers’ recording with correct posture. The second tool, the Companion, plays the part of one or several instruments to replace absent musicians with matching tempo, and style of the human musicians through audio analysis of their performance while also responding in real-time to verbal instructions. </p>
-	      --->
-	    </div>
-	  </div>
-	</section>
-
 	
-      	<section>
-	  <a href="#" class="image"><img src="images/companion.png" width="400" alt="" data-position="top center" /></a>
-	  <div class="content">
-	    <div class="inner">
-	      <h2>Companion</h2>
-	      <p>
-		The Companion plays the part of one or several instruments to replace absent musicians with matching tempo, and style of the human musicians through audio analysis of their performance while also responding in real-time to verbal instructions.</p>
-	      Drawing by Cecilia Ines Sanchez.
-	    </div>
-	  </div>
-	</section>
-
-
-
-	<!-- Visualize -->
-	<section id="visualize" class="wrapper style1  fade-up">
-	  <a href="#" class="image"><img src="images/visualizemusic.png" width="300" alt="" data-position="top center" /></a>
-	  <div class="content">
-	    <div class="inner">
-	      <h2>Visualize Music</h2>
-	      <p> This project analyzes music elements and transforms them into textual descriptions. These descriptions are converted into
-		visual representations (images or videos). The visual depictions are dynamically adjusted to mirror the music.
-		<ul class="actions">
-		  <li><a href="visualize.html" class="button scrolly">Learn more</a></li>
-		</ul>
-	    </div>
-	  </div>
-	</section>
 	
       
       <!-- Contact -->
-      <section id="contact" class="wrapper style1 fade-up">
+      <section id="contact" class="wrapper style5 fade-up">
 	<div class="inner">
+		<img src="images/aim.png" width="100" alt="" data-position="top center" />
 	  <h2>Get in touch</h2>
-	  <p>We would love to hear from you.</p>
 	  <div class="split style1">
-	    <!---
-		<section>
-		  <form method="post" action="#">
-		    <div class="fields">
-		      <div class="field half">
-			<label for="name">Name</label>
-			<input type="text" name="name" id="name" />
-		      </div>
-		      <div class="field half">
-			<label for="email">Email</label>
-			<input type="text" name="email" id="email" />
-		      </div>
-		      <div class="field">
-			<label for="message">Message</label>
-			<textarea name="message" id="message" rows="5"></textarea>
-		      </div>
-		    </div>
-		    <ul class="actions">
-		      <li><a href="" class="button submit">Send Message</a></li>
-		    </ul>
-		  </form>
-		</section>
-		--->
 		<section>
 		  <ul class="contact">
 		    <li>
-		      <h3>Address</h3>
-		      <span>Elliot 34, 712 3rd Street<br />
-			Purdue University, West Lafayette, IN 47907<br />
-			USA</span>
-		    </li>
-		    <li>
-		      <h3>Email</h3>
-		      <a href="#">yun98@purdue.edu</a>
+		      <h3>Email</h3><a href="mailto:yun98@purdue.edu">yun98@purdue.edu</a></p>
 		    </li>
 		    <li>
 		      <h3>Phone</h3>
@@ -337,12 +392,6 @@
 		    <li>
 		      <h3>Social</h3>
 		      <ul class="icons">
-			<!---
-			    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-			<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-			<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-			<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-			--->
 			<li><a href="https://www.linkedin.com/in/kristen-yeon-ji-yun-72112591/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 		      </ul>
 		    </li>
@@ -358,7 +407,7 @@
     <footer id="footer" class="wrapper style1-alt">
       <div class="inner">
 	<ul class="menu">
-	  <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+	  <li>&copy; Purdue AIM 2024. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a>, modified by Tim Nadolsky</li>
 	  <li> <a href="http://html5up.net/license">Creative Commons</a>.</p>
 </ul>
 </div>
