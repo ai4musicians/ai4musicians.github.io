@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+
+}
+#header {
+    background-color: #060606;
+}
+#leaderboard {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+#leaderboard th, #leaderboard td {
+    border: 1px solid #414141;
+    padding: 10px;
+    text-align: left;
+    color: #9A9A9A;
+    background-color: #2C2C2C;
+}
+#leaderboard th {
+    background-color: #202020;
+    color: white;
+}
+.gradient-line {
+    height: 3px; /* Adjust the height to make it thin */
+    background-image: linear-gradient(to right, #5e42a6, #b74e91);
+
+    border: none; /* Remove any border */
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
