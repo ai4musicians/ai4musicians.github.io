@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f9; 
+    color: #333; 
+}
+
+#header {
+    background-color: #ffffff; 
+    border-bottom: 1px solid #ddd; 
+}
+
+#leaderboard {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#leaderboard th, #leaderboard td {
+    border: 1px solid #e0e0e0; 
+    padding: 12px;
+    text-align: left;
+    color: #333;  
+    background-color: #fafafa;  
+}
+
+#leaderboard th {
+    background-color: #f0f0f5;  
+    color: #333;  
+}
+
+.gradient-line {
+    height: 5px;  
+    background-image: linear-gradient(to right, #5e42a6, #b74e91);  
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+    color: #333;  
+}
