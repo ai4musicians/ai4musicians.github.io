@@ -3606,8 +3606,14 @@ body.is-preload .wrapper.fade > .inner {
 
 /* Footer */
 
-#sidebar + #wrapper + #footer {
-	margin-left: 18em;
+#footer {
+	margin-top: 1em; /* Space between the last wrapper section and footer */
+	padding: 3em 5%; /* Default 5% padding on both sides */
+	background-color: #fafafa; /* Footer background */
+	border-radius: 15px; /* Rounded corners */
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+	transition: padding 0.3s ease; /* Transition for padding change */
+	margin-bottom: 0em;
 }
 
 /* Ensure the footer aligns with page flow */
@@ -3641,12 +3647,6 @@ body.is-preload .wrapper.fade > .inner {
 /* Sidebar */
 
 #sidebar {
-	--sidebar-bg: url("images/intro.svg");
-	background: var(--sidebar-bg) rgba(255, 255, 255, 0.9);
-	background-position: top right;
-	background-repeat: no-repeat;
-	background-size: cover;
-	transition: left 0.3s ease, background 0.3s ease;
 	padding: 2em;
 	background: #fafafa;
 	cursor: default;
@@ -3660,12 +3660,14 @@ body.is-preload .wrapper.fade > .inner {
 	width: 18em;
 	z-index: 10000;
 	color: #333;
-	background-attachment: fixed;
-	transition: left 0.3s ease;
 	left: 0; /* Show sidebar */
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
+	background-attachment: fixed;
+	background-color: #fafafa;
+	background-image: url("images/intro.svg");
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #sidebar > .inner {
@@ -3996,6 +3998,11 @@ body.is-preload #sidebar nav ul li {
 	#sidebar {
 		display: none;
 	}
+}
+
+#sidebar + #wrapper {
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 /* Intro */
