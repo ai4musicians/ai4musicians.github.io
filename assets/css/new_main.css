@@ -251,3 +251,11 @@ a {
 .team-member > .content {
 	padding: 5%;
 }
+
+footer {
+	background-color: #f8f8f8; /* Light grey for a subtle contrast */
+	color: #333;
+	text-align: center;
+	padding: 20px 0;
+	box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth at the top of the footer */
+}
