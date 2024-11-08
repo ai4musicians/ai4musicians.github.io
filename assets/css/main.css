@@ -4208,3 +4208,68 @@ body.is-preload #sidebar nav ul li {
 .news-item a:hover {
 	color: #b74e91;
 }
+
+/* Team page */
+.team-member {
+	display: grid;
+	grid-template-columns: 200px 1fr; /* Fixed width for image, flexible for text */
+	gap: 20px;
+	align-items: center;
+	margin-bottom: 2em;
+	border-radius: 16px; /* Smooth border */
+	padding: 25px; /* Extra padding for breathing room */
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+	transform: translateY(-5px); /* Lift on hover */
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.team-photo .profile-img {
+	width: 100%;
+	border-radius: 12px; /* Increased rounding for images */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+	transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.team-photo .profile-img:hover {
+	transform: scale(1.05); /* Slight zoom on hover */
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.team-info h2 {
+	font-size: 1.6em;
+	margin: 0;
+	color: #1c2833; /* Darker shade for primary heading */
+}
+
+.team-info h3 {
+	font-size: 1.3em;
+	color: #4a4a4a; /* Slightly darker for subheadings */
+	margin-top: 0.3em;
+}
+
+.team-info p {
+	font-size: 1em;
+	color: #333; /* Darker body text */
+	line-height: 1.8; /* Slightly more spacing for easier reading */
+}
+
+.team-info .icons {
+	margin-top: 12px;
+	display: flex;
+	gap: 10px; /* Space between icons */
+}
+
+.team-info .icons a {
+	color: #0073b1; /* LinkedIn color */
+	font-size: 1.3em; /* Increased size for visibility */
+	transition: color 0.3s, transform 0.3s;
+}
+
+.team-info .icons a:hover {
+	color: #005582; /* Darker LinkedIn color on hover */
+	transform: scale(1.1); /* Slightly larger on hover */
+}
