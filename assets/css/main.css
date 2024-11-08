@@ -3391,48 +3391,51 @@ table.alt tfoot {
 
 /* Main Colors */
 .wrapper.style1 {
-	/* background-color: #a4b2c0; Soft Blue-Gray */
 	/* background-color: #aca3b0; Mauve Gray */
 	background-color: #c9b8a3; /* Champagne Gray */
 }
 
 .wrapper.style2 {
-	background-color: #b5aebf; /* Lavender Gray */
+	background-color: #a4b2c0; /* Soft Blue-Gray */
 }
 
 .wrapper.style3 {
-	background-color: #7d8f94; /* Soft Charcoal Gray */
+	background-color: #b5aebf; /* Lavender Gray */
 }
 
 .wrapper.style4 {
-	background-color: #b9b4a5; /* Warm Greige */
+	background-color: #7d8f94; /* Soft Charcoal Gray */
 }
 
 .wrapper.style5 {
-	background-color: #9ea3aa; /* Soft Steel Blue */
+	background-color: #b9b4a5; /* Warm Greige */
 }
 
 .wrapper.style6 {
-	background-color: #b8a5b4; /* Delicate Mauve Purple */
+	background-color: #9ea3aa; /* Soft Steel Blue */
 }
 
 .wrapper.style7 {
-	background-color: #7d6f85; /* Dusky Lavender Gray */
+	background-color: #b8a5b4; /* Delicate Mauve Purple */
 }
 
 .wrapper.style8 {
-	background-color: #8b7a62; /* Smoky Brown */
+	background-color: #7d6f85; /* Dusky Lavender Gray */
 }
 
 .wrapper.style9 {
-	background-color: #6f8371; /* Mossy Green */
+	background-color: #8b7a62; /* Smoky Brown */
 }
 
 .wrapper.style10 {
-	background-color: #c1b8a4; /* Creamy Warm Gray */
+	background-color: #6f8371; /* Mossy Green */
 }
 
 .wrapper.style11 {
+	background-color: #c1b8a4; /* Creamy Warm Gray */
+}
+
+.wrapper.style12 {
 	background-color: #5f6d72; /* Slate Gray */
 }
 
