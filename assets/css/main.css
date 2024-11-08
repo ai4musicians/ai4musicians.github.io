@@ -4088,3 +4088,58 @@ body.is-preload #sidebar nav ul li {
 		background-attachment: scroll;
 	}
 }
+
+#news {
+	padding: 3em 5%;
+	border-radius: 15px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#news .inner h2 {
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 1.5em;
+}
+
+.news-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1.5em;
+}
+
+.news-item {
+	background-color: rgba(49, 36, 80, 0.1);
+	border-radius: 12px;
+	padding: 1.5em;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	text-align: center;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-item:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.news-item h3 {
+	font-size: 1.5em;
+	margin-bottom: 0.5em;
+	color: #222;
+}
+
+.news-item p {
+	font-size: 1em;
+	margin-bottom: 1em;
+	color: #444;
+}
+
+.news-item a {
+	color: #953d75;
+	font-weight: bold;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.news-item a:hover {
+	color: #b74e91;
+}
