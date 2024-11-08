@@ -3348,6 +3348,57 @@ table.alt tfoot {
 	border-top: 0;
 }
 
+/* Modern Table Styling */
+table.modern-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 20px 0;
+	font-size: 16px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Shadow for table */
+	overflow: hidden;
+}
+
+table.modern-table th,
+table.modern-table td {
+	padding: 15px;
+	text-align: center;
+	vertical-align: middle;
+	border-bottom: 1px solid #ddd;
+	color: #333;
+}
+
+/* Header Styling */
+table.modern-table th {
+	background-color: #a49787; /* Slightly darker shade for headers */
+	font-weight: bold;
+	color: #fff;
+}
+
+/* Profile Image Styling */
+table.modern-table .profile-img {
+	width: 200px;
+	height: auto;
+	border-radius: 8px; /* Slightly rounded corners */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for image */
+	object-fit: cover;
+}
+
+/* Hover Effects */
+table.modern-table tr:hover {
+	background-color: #f1e8df; /* Subtle hover color to match wrapper style */
+}
+
+/* Borders and First Column */
+table.modern-table td,
+table.modern-table th {
+	border-left: 1px solid #ddd;
+}
+
+table.modern-table td:first-child,
+table.modern-table th:first-child {
+	border-left: none;
+}
+
 /* Wrapper */
 
 .wrapper {
