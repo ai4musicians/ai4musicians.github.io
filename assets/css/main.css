@@ -131,7 +131,7 @@ body {
 	font-family: "Gill Sans", "Gill Sans MT", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 1.75;
-	background-image: url("images/intro.svg");
+	background-image: url("images/background.svg");
 	background-attachment: fixed;
 	background-position: top right;
 	background-repeat: no-repeat;
@@ -3359,7 +3359,7 @@ table.alt tfoot {
 	transition: padding-left 0.3s ease, padding-right 0.3s ease;
 	background-attachment: fixed;
 	background-color: #fafafa;
-	background-image: url("images/intro.svg");
+	background-image: url("images/background.svg");
 	background-position: top right;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -3712,7 +3712,7 @@ body.is-preload .wrapper.fade > .inner {
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 	background-attachment: fixed;
 	background-color: #fafafa;
-	background-image: url("images/intro.svg");
+	background-image: url("images/background.svg");
 	background-position: top right;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -4057,7 +4057,7 @@ body.is-preload #sidebar nav ul li {
 
 #intro {
 	background-attachment: fixed;
-	background-image: url("images/intro.svg");
+	background-image: url("images/background.svg");
 	background-position: top right;
 	background-repeat: no-repeat;
 	background-size: cover;
