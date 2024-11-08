@@ -2783,6 +2783,20 @@ input[type="radio"] + label:before {
 	width: 100%;
 }
 
+.centered-image-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.centered-image-wrapper img {
+	width: 100%;
+	max-height: 300px;
+	object-fit: cover;
+	border-radius: 12px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* List */
 
 ol {
