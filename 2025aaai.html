@@ -1,44 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xml:lang="en">
 	<head>
 		<title>2025 AAAI Workshop AI for Music</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /> -->
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, user-scalable=no"
+		/>
 		<meta
 			name="description"
 			content="Join the 2025 AAAI Workshop on Artificial Intelligence for Music, exploring the intersection of AI and music creation, recognition, education, and more."
 		/>
-		<link rel="stylesheet" href="assets/css/new_main.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript>
 			<link rel="stylesheet" href="assets/css/noscript.css" />
 		</noscript>
 	</head>
 
-	<body>
-		<div class="navbar">
-			<a href="index.html#intro">
-				<div class="navlogo">
-					<img src="/images/aim.png" alt="aim_logo" />
-				</div>
-			</a>
-			<div class="subnavbar">
-				<h4>Artificial Intelligence for Musicians Research Group</h4>
-				<hr />
-				<div class="links">
-					<a href="index.html#evaluator">Our Projects</a>
-					<a href="index.html#activities">Research Areas</a>
-					<a href="index.html#who">Leaders</a>
-					<a href="index.html#outreach">Outreach</a>
-					<a href="index.html#vipteam">VIP Team</a>
-					<a href="index.html#contact">Contact</a>
-				</div>
+	<body class="is-preload">
+		<!-- Sidebar -->
+		<section id="sidebar">
+			<div class="inner">
+				<nav>
+					<ul>
+						<li>
+							<a href="index.html"
+								><img src="images/aim.png" width="50" alt="AIM Logo"
+							/></a>
+						</li>
+						<li><a href="index.html#news">News</a></li>
+						<li><a href="index.html#amt">Our Projects</a></li>
+						<li><a href="index.html#activities">Research Areas</a></li>
+						<li><a href="index.html#who">Leaders</a></li>
+						<li><a href="index.html#outreach">Outreach</a></li>
+						<li><a href="index.html#vipteam">VIP Team</a></li>
+						<li><a href="index.html#contact">Contact</a></li>
+						<li><a href="#call-for-papers">Call for Papers</a></li>
+						<!-- Added Navigation Link -->
+					</ul>
+				</nav>
 			</div>
-		</div>
+		</section>
+
 		<!-- Wrapper -->
-		<main>
+		<div id="wrapper">
 			<!-- Main -->
-			<section id="main" class="wrapper style5">
+			<section id="main" class="wrapper style1 fullscreen fade-up">
 				<div class="inner">
 					<h1 class="major">Artificial Intelligence for Music</h1>
 
@@ -100,7 +107,7 @@
 					<section>
 						<h2>Schedule</h2>
 
-						<table style="width: 100%">
+						<table class="modern-table">
 							<tr>
 								<th>Time</th>
 								<th>Topic</th>
@@ -184,17 +191,23 @@
 								authors are encouraged to interact with workshop attendees by
 								including posters or demonstrations at the end of the workshop.
 								Conceptual designs without any evidence of practical
-								implementation are discouraged. 
-								
+								implementation are discouraged.
 							</p>
+
 							<p>
-								Papers must be formatted in AAAI two-column, camera-ready style; see the AAAI-25 author kit for details. 
-								Papers must be in trouble-free, high-resolution PDF format, formatted for US Letter (8.5″ x 11″) paper, using Type 1 or TrueType fonts. 
-								AAAI submissions are anonymous and must conform to the instructions (detailed below) for double-blind review. 
-								The authors must remove all author and affiliation information from their submission for review, and may replace it with other information, such as paper number and keywords. 
-								Submissions may consist of up to 6 pages of technical content plus additional pages solely for references; acknowledgements should be omitted from papers submitted for review.
-								Only PDF files are required at the time of submission for review
-							
+								Papers must be formatted in AAAI two-column, camera-ready style;
+								see the AAAI-25 author kit for details. Papers must be in
+								trouble-free, high-resolution PDF format, formatted for US
+								Letter (8.5″ x 11″) paper, using Type 1 or TrueType fonts. AAAI
+								submissions are anonymous and must conform to the instructions
+								(detailed below) for double-blind review. The authors must
+								remove all author and affiliation information from their
+								submission for review, and may replace it with other
+								information, such as paper number and keywords. Submissions may
+								consist of up to 6 pages of technical content plus additional
+								pages solely for references; acknowledgements should be omitted
+								from papers submitted for review. Only PDF files are required at
+								the time of submission for review.
 							</p>
 
 							<h3>Topics of Interest</h3>
@@ -252,7 +265,7 @@
 						<h2>Invited Speakers</h2>
 
 						<!-- Speaker 1: Hao-Wen (Herman) Dong -->
-						<section class="wrapper style5 spotlights">
+						<section class="wrapper style1 spotlights">
 							<section>
 								<a
 									href="https://hermandong.com/"
@@ -571,7 +584,7 @@
 										src="images/benchou.jpg"
 										width="400"
 										alt="Benjamin Shiue-Hal Chou"
-										data-position="top center"
+										data-position="right center"
 								/></a>
 								<div class="content">
 									<div class="inner">
@@ -607,7 +620,7 @@
 					</section>
 				</div>
 			</section>
-		</main>
+		</div>
 
 		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
