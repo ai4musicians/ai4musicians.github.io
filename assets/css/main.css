@@ -3413,6 +3413,17 @@ table.modern-table th:first-child {
 	border-left: none;
 }
 
+.numbered-list {
+	text-align: left;
+	margin: 0;
+	padding: 0 20px; /* Optional for better spacing */
+}
+
+.numbered-list li {
+	margin-bottom: 0.5em; /* Space between items */
+	list-style-position: inside; /* Keeps numbers inside the boundaries */
+}
+
 /* Wrapper */
 
 .wrapper {
