@@ -4329,3 +4329,20 @@ body.is-preload #sidebar nav ul li {
 .paper-authors a:hover {
 	text-decoration: underline;
 }
+
+/* Subtitle for new pages */
+.subtitle {
+	font-size: 1.2rem;
+	margin-top: -2rem; /* Pull it closer to the main header */
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.subtitle a {
+	color: #666;
+	text-decoration: none;
+}
+
+.subtitle a:hover {
+	text-decoration: underline;
+}
