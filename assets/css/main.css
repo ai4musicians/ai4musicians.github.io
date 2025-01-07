@@ -4284,3 +4284,48 @@ body.is-preload #sidebar nav ul li {
 	color: #005582; /* Darker LinkedIn color on hover */
 	transform: scale(1.1); /* Slightly larger on hover */
 }
+
+/* Papers formatting */
+.papers-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.paper-entry {
+	/* border-bottom: 1px solid #ddd;  */ /* Optional border between papers */
+	/* padding-bottom: 1rem; */
+	/* margin-bottom: 1rem; */
+}
+
+.paper-title {
+	font-size: 1.1rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.paper-title a {
+	text-decoration: none;
+	color: #333; /* Neutral color */
+}
+
+.paper-title a:hover {
+	text-decoration: underline;
+}
+
+.paper-authors {
+	font-size: 0.9rem;
+	color: #666;
+	margin-top: 0.5rem;
+}
+
+.paper-authors a {
+	color: #333; /* Neutral link color */
+	text-decoration: none;
+}
+
+.paper-authors a:hover {
+	text-decoration: underline;
+}
