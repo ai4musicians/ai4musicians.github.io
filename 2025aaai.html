@@ -233,8 +233,7 @@
 							</div>
 							<div>
 								Symbolic music analysis tasks are often performed by models
-								originally developed for Natural Language Processing, such as Transformers. Such models require the input data to be represented as sequences, which is achieved through a process of tokenization. Tokenization strategies for symbolic music often rely on absolute MIDI values to represent pitch infor-
-								mation. However, music research largely promotes the benefit of higher-level representations such as melodic contour and harmonic relations for which pitch intervals turn out to
+								originally developed for Natural Language Processing, such as Transformers. Such models require the input data to be represented as sequences, which is achieved through a process of tokenization. Tokenization strategies for symbolic music often rely on absolute MIDI values to represent pitch information. However, music research largely promotes the benefit of higher-level representations such as melodic contour and harmonic relations for which pitch intervals turn out to
 								be more expressive than absolute pitches. In this work, we introduce a general framework for building interval-based tokenizations. By evaluating these tokenizations on three music analysis tasks, we show that such interval-based tokenizations improve model performances and facilitate their explainability.
 							</div>
 						</div>
@@ -257,13 +256,17 @@
 								<a href="https://github.com/jryban/frechet-music-distance"
 									target="_blank">https://github.com/jryban/frechet-music-distance</a>
 							</div>
+							<div>
+								In this paper we introduce the Frechet Music Distance (FMD), a novel evaluation metric for generative symbolic music models, inspired by the Frechet Inception Distance (FID) in computer vision and Frechet Audio Distance (FAD) in generative audio. FMD calculates the distance between distributions of reference and generated symbolic music embeddings, capturing abstract musical features. We validate FMD across several datasets and models. Results indicate that FMD effectively differentiates model quality, providing a domain specific metric for evaluating symbolic music generation and establishing a reproducible standard for future research in symbolic music modeling.
+							</div>
 						</div>
 
 						<div class="paper-entry">
 							<div class="paper-title">
 								<a href="https://drive.google.com/file/d/1itoIlMlVFULwGj6MCL_Cm1e5MkfkMj1b/view?usp=drive_link"
 									target="_blank">
-									<strong>M2M-Gen: A Multimodal Framework for Automated Background Music Generation in
+									<strong>M2M-Gen: A Multimodal Framework for
+										Automated Background Music Generation in
 										Japanese Manga Using Large Language Models</strong>
 								</a>
 								<a href="https://drive.google.com/file/d/1itoIlMlVFULwGj6MCL_Cm1e5MkfkMj1b/view?usp=drive_link"
@@ -278,14 +281,16 @@
 								<a href="https://manga-to-music.github.io/M2M-Gen/"
 									target="_blank">https://manga-to-music.github.io/M2M-Gen/</a>
 							</div>
+							<div>
+								This paper introduces M2M Gen (Manga to Music Generation), a multi-modal framework for generating background music tailored to Japanese manga. The key challenges in this task are the lack of an available dataset or a baseline. To address these challenges, we propose an automated music generation pipeline that produces background music for an input manga book. Initially, we use the dialogues in a manga to detect scene boundaries and perform emotion classification using the characters’ faces within a scene. Then, we use GPT 4o to translate this low level scene information into a high level music directive. Conditioned on the scene information and the music directive, another instance of GPT 4o generates page level music captions to guide a text to music model. This produces music that is aligned with the manga’s evolving narrative. The effectiveness of M2M Gen is confirmed through extensive subjective evaluations, showcasing its capability to generate higher quality, more relevant and consistent music that complements specific scenes when compared to our baselines.
+							</div>
 						</div>
 
 						<div class="paper-entry">
 							<div class="paper-title">
 								<a href="https://drive.google.com/file/d/1TzGUgBzHXF8CppaG12AiaEl_QljJMdiH/view?usp=drive_link"
 									target="_blank">
-									<strong>AffectMachine-Pop: A controllable expert system for real-time pop music
-										generation</strong>
+									<strong>AffectMachine-Pop: A controllable expert system for real-time pop music generation</strong>
 								</a>
 								<a href="https://drive.google.com/file/d/1TzGUgBzHXF8CppaG12AiaEl_QljJMdiH/view?usp=drive_link"
 									target="_blank">
@@ -296,6 +301,9 @@
 								Kat Agres (National University of Singapore)*; Adyasha Dash (National University of
 								Singapore); Phoebe Chua (National University of Singapore); Stefan Ehrlich (SETLabs
 								Research GmbH)
+							</div>
+							<div>
+								Music is a powerful medium for influencing listeners’ emotional states, and this capacity has driven a surge of research interest in AI based affective music generation in recent years. Many existing systems, however, are a black box which are not directly controllable, thus making these systems less flexible and adaptive to users. We present AffectMachine Pop, an expert system capable of generating retro pop music according to arousal and valence values, which can either be pre determined or based on a listener’s real time emotion states. To validate the efficacy of the system, we conducted a listening study demonstrating that AffectMachine Pop is capable of generating affective music at target levels of arousal and valence. The system is tailored for use either as a tool for generating interactive affective music based on user input, or for incorporation into biofeedback or neurofeedback systems to assist users with emotion self regulation.
 							</div>
 						</div>
 
@@ -326,6 +334,13 @@
 								<a href="https://www.ctralie.com/echoes/"
 									target="_blank">https://www.ctralie.com/echoes/</a>
 							</div>
+							<div>
+								As generative techniques pervade the audio domain, there has been increasing interest in tracing back through these complicated models to understand how they draw on their training data to synthesize new examples. This is important both to ensure they use properly licensed data and to elucidate their black box behavior.
+
+In this paper, we show that if imperceptible echoes are hidden in the training data, a wide variety of audio to audio architectures, including differentiable digital signal processing (DDSP), Realtime Audio Variational AutoEncoder (RAVE), and “Dance Diffusion,” will reproduce these echoes in their outputs. Hiding a single echo is particularly robust across all architectures, and we also show promising results in hiding longer time spread echo patterns for increased information capacity.
+
+We conclude by showing that echoes make their way into fine tuned models, survive mixing/demixing, and persist through pitch shift augmentation during training. This simple, classical idea in watermarking demonstrates significant promise for tagging generative audio models.
+							</div>
 						</div>
 
 						<div class="paper-entry">
@@ -348,6 +363,11 @@
 								<a href="https://github.com/ioahKwon/Revisiting-Your-Memory"
 									target="_blank">https://github.com/ioahKwon/Revisiting-Your-Memory</a>
 							</div>
+							<div>
+								In this paper, we introduce RecallAffectiveMemory, a novel task designed to reconstruct autobiographical memories through audio visual generation guided by affect extracted from electroencephalogram (EEG) signals. To support this task, we present the EEG AffectiveMemory dataset, which includes textual descriptions, visuals, music, and EEG recordings collected during memory recall from nine participants.
+
+We also propose RYM (Recall Your Memory), a three-stage framework for generating synchronized audio visual content while maintaining dynamic personal memory affect trajectories. Experimental results show that our method can faithfully reconstruct affect contextualized audio visual memories across all subjects, both qualitatively and quantitatively, with participants reporting strong affective concordance between their recalled memories and the generated content. Our approach advances affect decoding research and its practical applications in personalized media creation through neural based affect comprehension.
+							</div>
 						</div>
 
 						<div class="paper-entry">
@@ -365,6 +385,11 @@
 							<div class="paper-authors">
 								Suhwan Choi (Crabs.ai)*; Kyu Won Kim (Independent); Myungjoo Kang (Seoul National
 								University)
+							</div>
+							<div>
+								We introduce Multimodal Matching based on Valence and Arousal (MMVA), a tri-modal encoder framework designed to capture emotional content across images, music, and musical captions. To support this framework, we expand the Image Music Emotion Matching Net (IMEMNet) dataset, creating IMEMNet C, which includes 24,756 images and 25,944 music clips with corresponding musical captions.
+
+We employ multimodal matching scores based on continuous valence (emotional positivity) and arousal (emotional intensity) values. This continuous matching score enables random sampling of image music pairs during training by computing similarity scores from the valence arousal values across different modalities. Consequently, the proposed approach achieves state of the art performance in valence arousal prediction tasks. Furthermore, the framework demonstrates its efficacy in various zero shot tasks, highlighting the potential of valence and arousal predictions in downstream applications.
 							</div>
 						</div>
 
@@ -387,6 +412,13 @@
 								Mathieu Barthet (Queen Mary University of London,
 								Aix-Marseille Univ CNRS PRISM)<br>
 								<a href="https://www.aim.qmul.ac.uk/" target="_blank">https://www.aim.qmul.ac.uk/</a>
+							</div>
+							<div>
+								Artificial Intelligence (AI) is a disruptive technology transforming many industries, including the music industry. Recently, the concept of Industry 5.0 has been proposed, emphasizing principles of sustainability, resilience, and human centricity to address shortcomings in Industry 4.0 and its associated technologies, including AI. In line with these principles, this paper advocates for ethical AI practices in the music industry.
+
+We outline the current state of AI in the music industry and its broader ethical and legal issues through an analysis of contemporary case studies. We list current commercial applications of AI in music, gather perspectives from diverse stakeholders, and examine existing and forthcoming regulatory frameworks and industry initiatives. This paper provides timely research directions, practical recommendations, and commercial opportunities to aid the transition to a human centric, resilient, and sustainable music industry 5.0.
+
+Our focus is primarily on case studies from the western music industry in the European Union (EU), United States of America (US), and United Kingdom (UK), though many of the issues discussed are universal. While not exhaustive, this work aims to guide researchers, businesses, and policymakers in developing responsible frameworks for deploying and regulating AI in the music industry.
 							</div>
 						</div>
 					</div>
