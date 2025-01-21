@@ -4347,40 +4347,93 @@ body.is-preload #sidebar nav ul li {
 	text-decoration: underline;
 }
 
-/* Speaker Section Layout */
 .speaker-section {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: transparent; /* Make background transparent */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.speaker-section:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+.speaker-content {
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Center content horizontally */
-    text-align: center;
-    gap: 1.5em; /* Spacing between elements */
-    margin-bottom: 2em; /* Add spacing after the section */
+    align-items: center; /* Align photo in the middle of the bio */
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.speaker-photo-container {
+    flex-shrink: 0;
 }
 
 .speaker-photo {
-    max-width: 200px; /* Adjust image size */
-    border-radius: 8px; /* Rounded corners for the image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.speaker-photo:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.speaker-name {
+    font-size: 1.6em;
+    color: #1c2833;
+    margin-bottom: 10px;
+}
+
+.speaker-name a {
+    text-decoration: none;
+    color: #1c2833; /* Match the speaker name's color */
+    transition: color 0.3s ease;
+}
+
+.speaker-name a:hover {
+    color: inherit; /* Keeps the current color */
+    opacity: 0.7; /* Fades the text */
+    transition: opacity 0.3s ease; /* Smooth fading effect */
 }
 
 .speaker-bio {
-    max-width: 600px; /* Limit bio width for readability */
-    line-height: 1.6; /* Improve readability */
-    font-size: 1em; /* Standard font size */
-    color: #333; /* Neutral text color */
+    font-size: 1em; /* Match the body text size of team-info */
+    color: #333; /* Darker text color for better readability */
+    line-height: 1.8; /* Increased for improved spacing */
 }
 
-.speaker-title {
-    font-size: 1.4em; /* Larger size for emphasis */
-    font-weight: bold;
-    margin-top: 1em; /* Spacing above title */
-    color: #1c2833; /* Darker primary color */
+.speaker-talk {
+    border-top: 1px solid #ddd; /* Keeps the separator style */
+    padding-top: 20px; /* Extra padding for alignment */
 }
 
-.speaker-abstract {
-    max-width: 800px; /* Limit width for readability */
-    line-height: 1.8; /* Increase spacing for readability */
-    font-size: 1em; /* Match bio font size */
-    color: #4a4a4a; /* Slightly softer color */
-    margin-top: 0.5em; /* Spacing above abstract */
+.talk-title {
+    font-size: 1.6em; /* Match team-info h2 */
+    color: #1c2833; /* Darker primary heading color */
+    margin-bottom: 10px; /* Consistent spacing */
+}
+
+.talk-abstract {
+    font-size: 1em; /* Match body text size */
+    color: #333; /* Darker color for readability */
+    line-height: 1.8; /* Improved spacing for easier reading */
+}
+
+/* General Hover Effect for Links */
+.speaker-bio a, .talk-abstract a {
+    color: #0073b1; /* Same as team-info link color */
+    transition: color 0.3s, transform 0.3s;
+}
+
+.speaker-bio a:hover, .talk-abstract a:hover {
+    color: #005582; /* Darker blue on hover */
+    transform: scale(1.05); /* Subtle zoom */
 }
