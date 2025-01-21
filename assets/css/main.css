@@ -4222,19 +4222,19 @@ body.is-preload #sidebar nav ul li {
 
 /* Team page */
 .team-member {
-	display: grid;
-	grid-template-columns: 200px 1fr; /* Fixed width for image, flexible for text */
+	display: flex; /* Use flexbox for proper layout */
 	gap: 20px;
-	align-items: center;
+	align-items: center; /* Center vertically */
 	margin-bottom: 2em;
-	border-radius: 16px; /* Smooth border */
-	padding: 25px; /* Extra padding for breathing room */
+	border-radius: 16px;
+	padding: 25px;
 	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	background-color: #ffffff; /* Optional for better separation */
 }
 
 .team-member:hover {
-	transform: translateY(-5px); /* Lift on hover */
+	transform: translateY(-5px);
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -4247,14 +4247,17 @@ body.is-preload #sidebar nav ul li {
 }
 
 .team-photo {
-    flex: 0 0 auto; /* Prevent photo from resizing */
-    max-width: 200px; /* Fixed size for image container */
+	flex: 0 0 auto; /* Keep the image a fixed size */
+	width: 200px; /* Fixed width */
 }
 
 .team-info {
-    flex: 1; /* Allow bio to take remaining space */
-    text-align: left;
-    line-height: 1.6;
+	flex: 1; /* Allow the bio to grow and fill available space */
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* Center bio content vertically */
+	text-align: left;
+	line-height: 1.6;
 }
 
 .team-photo img {
@@ -4262,6 +4265,7 @@ body.is-preload #sidebar nav ul li {
     max-width: 100%; /* Ensure responsive scaling */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
+
 
 .team-photo .profile-img {
 	width: 100%;
@@ -4370,4 +4374,20 @@ body.is-preload #sidebar nav ul li {
 
 .subtitle a:hover {
 	text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+	.team-member {
+		flex-direction: column; /* Stack items vertically */
+		text-align: center;
+	}
+
+	.team-photo {
+		width: 100px; /* Scale down for smaller screens */
+		margin-bottom: 20px;
+	}
+
+	.team-info {
+		text-align: center;
+	}
 }
