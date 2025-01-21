@@ -4222,50 +4222,21 @@ body.is-preload #sidebar nav ul li {
 
 /* Team page */
 .team-member {
-	display: flex; /* Use flexbox for proper layout */
+	display: grid;
+	grid-template-columns: 200px 1fr; /* Fixed width for image, flexible for text */
 	gap: 20px;
-	align-items: center; /* Center vertically */
+	align-items: center;
 	margin-bottom: 2em;
-	border-radius: 16px;
-	padding: 25px;
+	border-radius: 16px; /* Smooth border */
+	padding: 25px; /* Extra padding for breathing room */
 	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
-	background-color: #ffffff; /* Optional for better separation */
 }
 
 .team-member:hover {
-	transform: translateY(-5px);
+	transform: translateY(-5px); /* Lift on hover */
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
-
-/* Side-by-side layout for team photo and bio */
-.side-by-side {
-    display: flex;
-    flex-wrap: nowrap; /* Ensures items stay on the same row */
-    align-items: flex-start;
-    gap: 20px; /* Space between photo and bio */
-}
-
-.team-photo {
-	flex: 0 0 auto; /* Keep the image a fixed size */
-	width: 200px; /* Fixed width */
-}
-
-.team-info {
-	flex: 1; /* Allow the bio to grow and fill available space */
-	display: flex;
-	flex-direction: column;
-	justify-content: center; /* Center bio content vertically */
-	text-align: left;
-	line-height: 1.6;
-}
-
-.team-photo img {
-    border-radius: 8px; /* Maintain existing image styling */
-    max-width: 100%; /* Ensure responsive scaling */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
 
 .team-photo .profile-img {
 	width: 100%;
@@ -4376,18 +4347,40 @@ body.is-preload #sidebar nav ul li {
 	text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) {
-	.team-member {
-		flex-direction: column; /* Stack items vertically */
-		text-align: center;
-	}
+/* Speaker Section Layout */
+.speaker-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+    gap: 1.5em; /* Spacing between elements */
+    margin-bottom: 2em; /* Add spacing after the section */
+}
 
-	.team-photo {
-		width: 100px; /* Scale down for smaller screens */
-		margin-bottom: 20px;
-	}
+.speaker-photo {
+    max-width: 200px; /* Adjust image size */
+    border-radius: 8px; /* Rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+}
 
-	.team-info {
-		text-align: center;
-	}
+.speaker-bio {
+    max-width: 600px; /* Limit bio width for readability */
+    line-height: 1.6; /* Improve readability */
+    font-size: 1em; /* Standard font size */
+    color: #333; /* Neutral text color */
+}
+
+.speaker-title {
+    font-size: 1.4em; /* Larger size for emphasis */
+    font-weight: bold;
+    margin-top: 1em; /* Spacing above title */
+    color: #1c2833; /* Darker primary color */
+}
+
+.speaker-abstract {
+    max-width: 800px; /* Limit width for readability */
+    line-height: 1.8; /* Increase spacing for readability */
+    font-size: 1em; /* Match bio font size */
+    color: #4a4a4a; /* Slightly softer color */
+    margin-top: 0.5em; /* Spacing above abstract */
 }
