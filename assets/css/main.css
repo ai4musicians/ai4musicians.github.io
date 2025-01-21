@@ -4238,6 +4238,31 @@ body.is-preload #sidebar nav ul li {
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
+/* Side-by-side layout for team photo and bio */
+.side-by-side {
+    display: flex;
+    flex-wrap: nowrap; /* Ensures items stay on the same row */
+    align-items: flex-start;
+    gap: 20px; /* Space between photo and bio */
+}
+
+.team-photo {
+    flex: 0 0 auto; /* Prevent photo from resizing */
+    max-width: 200px; /* Fixed size for image container */
+}
+
+.team-info {
+    flex: 1; /* Allow bio to take remaining space */
+    text-align: left;
+    line-height: 1.6;
+}
+
+.team-photo img {
+    border-radius: 8px; /* Maintain existing image styling */
+    max-width: 100%; /* Ensure responsive scaling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
 .team-photo .profile-img {
 	width: 100%;
 	border-radius: 12px; /* Increased rounding for images */
