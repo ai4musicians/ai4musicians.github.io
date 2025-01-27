@@ -85,7 +85,7 @@ function showDialogBox(index) {
       `;
 
     document.getElementById("leaderboard-container").classList.add("dimmed");
-    document.getElementById("dialogBox").style.display = "block";
+    document.getElementById("dialogBox").style.display = "inline";
     document.getElementById("dialogOverlay").style.display = "block";
 }
 
