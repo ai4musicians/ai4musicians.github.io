@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leaderboard</title>
-    <link rel="stylesheet" href="leaderboard/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div id="header">
-      <h1>2025 Music Transcription Competition Leaderboard</h1>
-    </div>
-    <div class="gradient-line"></div>
-    <table id="leaderboard">
-      <thead>
-        <tr>
-          <th>Rank</th>
-          <th>Team Name</th>
-          <th>Team Members</th>
-          <th>Submission Date</th>
-          <th>Runtime</th>
-          <th>Performance Score</th>
-        </tr>
-      </thead>
-      <tbody id="leaderboard-body">
-        <!-- Data will go here -->
-      </tbody>
-    </table>
-    <script src="leaderboard/script.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Leaderboard</title>
+        <link rel="stylesheet" href="leaderboard/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div id="leaderboard-container">
+            <div id="header">
+                <h1>2025 Music Transcription Competition Leaderboard</h1>
+            </div>
+            <div class="gradient-line"></div>
+            <table id="leaderboard">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Team Name</th>
+                        <th>Team Members</th>
+                        <th>Submission Date</th>
+                        <th>Runtime</th>
+                        <th>Performance Score</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard-body">
+                    <!-- Data will go here -->
+                </tbody>
+            </table>
+        </div>
+        <div id="dialogBox">
+            <div class="dialog-header">Team Details</div>
+            <div class="dialog-body" id="dialogContent"></div>
+            <div class="dialog-footer">
+                <button class="dialog-close-btn" onclick="closeDialogBox()">
+                    Close
+                </button>
+            </div>
+        </div>
+        <script src="leaderboard/script.js"></script>
+    </body>
 </html>
