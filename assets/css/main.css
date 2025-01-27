@@ -4469,3 +4469,35 @@ body.is-preload #sidebar nav ul li {
     border-color: #000;
     transform: scale(1);
 }
+
+/* Schedule container */
+.schedule-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.schedule-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.schedule-date {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    flex-shrink: 0;
+    width: 120px;
+    text-align: right;
+}
+.schedule-event {
+    font-size: 18px;
+    color: #555;
+    flex-grow: 1;
+}
