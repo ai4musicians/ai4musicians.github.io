@@ -12,37 +12,40 @@
             rel="stylesheet"
         />
     </head>
+
     <body>
-        <div id="leaderboard-container">
-            <div id="header">
-                <h1>2025 Music Transcription Competition Leaderboard</h1>
+        <header id="header" class="wrapper" style="margin-top: 1%">
+            <h1>2025 Music Transcription Competition Leaderboard</h1>
+        </header>
+
+        <div class="gradient-line"></div>
+
+        <main class="wrapper">
+            <div class="table-wrapper">
+                <table id="leaderboard" class="modern-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Team Name</th>
+                            <th>Team Members</th>
+                            <th>Submission Date</th>
+                            <th>Runtime</th>
+                            <th>Performance Score</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leaderboard-body">
+                        <!-- Data will be dynamically populated here -->
+                    </tbody>
+                </table>
             </div>
-            <div class="gradient-line"></div>
-            <table id="leaderboard">
-                <thead>
-                    <tr>
-                        <th>Rank</th>
-                        <th>Team Name</th>
-                        <th>Team Members</th>
-                        <th>Submission Date</th>
-                        <th>Runtime</th>
-                        <th>Performance Score</th>
-                    </tr>
-                </thead>
-                <tbody id="leaderboard-body">
-                    <!-- Data will go here -->
-                </tbody>
-            </table>
-        </div>
-        <div id="dialogBox">
-            <div class="dialog-header">Team Details</div>
-            <div class="dialog-body" id="dialogContent"></div>
-            <div class="dialog-footer">
-                <button class="dialog-close-btn" onclick="closeDialogBox()">
-                    Close
-                </button>
+        </main>
+
+        <footer id="footer" class="wrapper style3">
+            <div class="inner">
+                <p>&copy; Purdue AIM 2025. All rights reserved.</p>
             </div>
-        </div>
+        </footer>
+
         <script src="leaderboard/script.js"></script>
     </body>
 </html>
