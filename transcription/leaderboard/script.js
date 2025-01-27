@@ -70,7 +70,7 @@ function updateLeaderboard(entries) {
                 event.preventDefault(); // Prevent scrolling
                 const index = event.target.getAttribute("data-index");
                 console.log(index);
-                showDialogBox(index); // Call the function with the correct index
+                showDialogBox(index);
             });
         });
     });

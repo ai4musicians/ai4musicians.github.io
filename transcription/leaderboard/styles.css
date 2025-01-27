@@ -156,7 +156,7 @@ body {
 }
 
 #dialogBox {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -170,7 +170,7 @@ body {
 }
 
 #dialogOverlay {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
