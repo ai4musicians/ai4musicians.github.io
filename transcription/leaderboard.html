@@ -21,22 +21,33 @@
         <div class="gradient-line"></div>
 
         <main class="wrapper">
-            <div class="table-wrapper">
-                <table id="leaderboard" class="modern-table">
-                    <thead>
-                        <tr>
-                            <th>Rank</th>
-                            <th>Team Name</th>
-                            <th>Team Members</th>
-                            <th>Submission Date</th>
-                            <th>Runtime</th>
-                            <th>Performance Score</th>
-                        </tr>
-                    </thead>
-                    <tbody id="leaderboard-body">
-                        <!-- Data will be dynamically populated here -->
-                    </tbody>
-                </table>
+            <div id="leaderboard-container">
+                <div class="table-wrapper">
+                    <table id="leaderboard" class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Team Name</th>
+                                <th>Team Members</th>
+                                <th>Submission Date</th>
+                                <th>Runtime</th>
+                                <th>Performance Score</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leaderboard-body">
+                            <!-- Data will be dynamically populated here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="dialogBox">
+                <div class="dialog-header">Team Details</div>
+                <div class="dialog-body" id="dialogContent"></div>
+                <div class="dialog-footer">
+                    <button class="dialog-close-btn" onclick="closeDialogBox()">
+                        Close
+                    </button>
+                </div>
             </div>
         </main>
 

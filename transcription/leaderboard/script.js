@@ -69,7 +69,6 @@ function updateLeaderboard(entries) {
             link.addEventListener("click", (event) => {
                 event.preventDefault(); // Prevent scrolling
                 const index = event.target.getAttribute("data-index");
-                console.log(index);
                 showDialogBox(index);
             });
         });
