@@ -4473,46 +4473,6 @@ body.is-preload #sidebar nav ul li {
     transform: scale(1);
 }
 
-/* Slack button styles */
-#slack-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 3%;
-}
-.slack-button.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 16px 32px;
-    border: 2px solid #4a154b;
-    border-radius: 8px;
-    text-align: center;
-    background-color: #4a154b;
-    transition: all 0.3s ease;
-    min-width: 250px;
-    height: 60px;
-}
-.slack-button.button span {
-    font-size: 20px;
-    font-weight: bold;
-    color: #ffffff;
-    line-height: 1;
-}
-.slack-button.button:hover {
-    background-color: #3e1341;
-    border-color: #3e1341;
-    transform: scale(1.05);
-    cursor: pointer;
-}
-.slack-button.button:active {
-    background-color: #320e34;
-    border-color: #320e34;
-    transform: scale(1);
-}
-
 /* Schedule container */
 .schedule-container {
     display: flex;
