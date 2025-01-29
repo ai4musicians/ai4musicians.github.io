@@ -86,13 +86,11 @@ function showDialogBox(index) {
 
     document.getElementById("leaderboard-container").classList.add("dimmed");
     document.getElementById("dialogBox").style.display = "inline";
-    document.getElementById("dialogOverlay").style.display = "block";
 }
 
 function closeDialogBox() {
     document.getElementById("leaderboard-container").classList.remove("dimmed");
     document.getElementById("dialogBox").style.display = "none";
-    document.getElementById("dialogOverlay").style.display = "none";
 }
 
 // Simulate the leaderboard update when the page loads
