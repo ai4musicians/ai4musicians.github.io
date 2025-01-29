@@ -29,13 +29,15 @@ async function fetchLeaderboardData() {
         try {
             const response = await fetch(API_URL, { cache: "no-cache" });
             const data = await response.json();
+            data.values.shift(); // Remove first row (header)
 
             // Process leaderboard entries
             const leaderboardEntries = data.values.map((row) => ({
-                timestamp: formatTimestamp(row[0]),
-                teamName: row[1],
-                teamMembers: row[2],
-                score: +row[3],
+                timestamp: formatTimestamp(row[2]),
+                teamName: row[0],
+                teamMembers: row[1],
+                runtime: row[3],
+                score: +row[4],
             }));
 
             // Sort by score descending
@@ -64,7 +66,7 @@ function updateLeaderboard(entries) {
                     <td>${entry.teamName}</td>
                     <td>${entry.teamMembers}</td>
                     <td>${entry.timestamp}</td>
-                    <td></td>
+                    <td>${entry.runtime} ms</td>
                     <td><a href="#" class="score-link" data-index="${index}">${entry.score}</a></td>
                 </tr>
             `;
@@ -90,6 +92,7 @@ function showDialogBox(index) {
             <p><strong>Team Name:</strong> ${entry.teamName}</p>
             <p><strong>Team Members:</strong> ${entry.teamMembers}</p>
             <p><strong>Timestamp:</strong> ${entry.timestamp}</p>
+            <p><strong>Runtime:</strong> ${entry.runtime} ms</p>
             <p><strong>Score:</strong> ${entry.score}</p>
         `;
 
