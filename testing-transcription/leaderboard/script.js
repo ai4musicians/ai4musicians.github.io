@@ -1,5 +1,5 @@
 const API_URL =
-    "https://script.google.com/macros/s/AKfycbwGVSf_9XdcQdDjTTL-uliZ6Qw3gN-Fnz5ytB3k4ub1rHDGDdOs0O0aBlxK3P6HU223/exec";
+    "https://script.google.com/macros/s/AKfycbwuaF0cEmmuYw1_nJobHlCbEQoEQJwbC9_wES_Az5UH91-U4_IdFEOnnc-rRFY6QrtiNw/exec";
 
 // Function to format timestamps efficiently
 function formatTimestamp(isoString) {
@@ -29,15 +29,13 @@ async function fetchLeaderboardData() {
         try {
             const response = await fetch(API_URL, { cache: "no-cache" });
             const data = await response.json();
-            data.values.shift(); // Remove first row (header)
 
             // Process leaderboard entries
             const leaderboardEntries = data.values.map((row) => ({
-                timestamp: formatTimestamp(row[2]),
-                teamName: row[0],
-                teamMembers: row[1],
-                runtime: row[3],
-                score: +row[4],
+                timestamp: formatTimestamp(row[0]),
+                teamName: row[1],
+                teamMembers: row[2],
+                score: +row[3],
             }));
 
             // Sort by score descending
@@ -61,15 +59,15 @@ function updateLeaderboard(entries) {
 
     entries.forEach((entry, index) => {
         htmlContent += `
-                <tr>
-                    <td>${index + 1}</td>
-                    <td>${entry.teamName}</td>
-                    <td>${entry.teamMembers}</td>
-                    <td>${entry.timestamp}</td>
-                    <td>${entry.runtime} ms</td>
-                    <td><a href="#" class="score-link" data-index="${index}">${entry.score}</a></td>
-                </tr>
-            `;
+            <tr>
+                <td>${index + 1}</td>
+                <td>${entry.teamName}</td>
+                <td>${entry.teamMembers}</td>
+                <td>${entry.timestamp}</td>
+                <td></td>
+                <td><a href="#" class="score-link" data-index="${index}">${entry.score}</a></td>
+            </tr>
+        `;
     });
 
     leaderboardBody.innerHTML = htmlContent; // Update in one go
@@ -89,20 +87,21 @@ function updateLeaderboard(entries) {
 function showDialogBox(index) {
     const entry = window.leaderboardEntries[index];
     document.getElementById("dialogContent").innerHTML = `
-            <p><strong>Team Name:</strong> ${entry.teamName}</p>
-            <p><strong>Team Members:</strong> ${entry.teamMembers}</p>
-            <p><strong>Timestamp:</strong> ${entry.timestamp}</p>
-            <p><strong>Runtime:</strong> ${entry.runtime} ms</p>
-            <p><strong>Score:</strong> ${entry.score}</p>
-        `;
+        <p><strong>Team Name:</strong> ${entry.teamName}</p>
+        <p><strong>Team Members:</strong> ${entry.teamMembers}</p>
+        <p><strong>Timestamp:</strong> ${entry.timestamp}</p>
+        <p><strong>Score:</strong> ${entry.score}</p>
+    `;
 
     document.getElementById("leaderboard-container").classList.add("dimmed");
     document.getElementById("dialogBox").style.display = "inline";
+    document.getElementById("dialogOverlay").style.display = "block";
 }
 
 function closeDialogBox() {
     document.getElementById("leaderboard-container").classList.remove("dimmed");
     document.getElementById("dialogBox").style.display = "none";
+    document.getElementById("dialogOverlay").style.display = "none";
 }
 
 // Fetch leaderboard on page load

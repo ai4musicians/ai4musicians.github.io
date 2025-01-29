@@ -4445,18 +4445,21 @@ body.is-preload #sidebar nav ul li {
 }
 .leaderboard-button {
     display: inline-block;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    padding: 12px 24px;
+    padding: 4px 24px;
     border: 2px solid #333;
     border-radius: 8px;
     text-align: center;
     transition: all 0.3s ease;
     background-color: #f5f5f5;
 }
-.leaderboard-button h2 {
-    margin: 0;
+.leaderboard-button span {
     font-size: 20px;
+    font-size: bold;
     color: #c9b8a3;
+    line-height: 1;
 }
 .leaderboard-button:hover {
     background-color: #e0d9d1;
