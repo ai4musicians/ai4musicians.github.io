@@ -1,5 +1,5 @@
 const API_URL =
-    "https://script.google.com/macros/s/AKfycbwuaF0cEmmuYw1_nJobHlCbEQoEQJwbC9_wES_Az5UH91-U4_IdFEOnnc-rRFY6QrtiNw/exec";
+    "https://script.google.com/macros/s/AKfycbwGVSf_9XdcQdDjTTL-uliZ6Qw3gN-Fnz5ytB3k4ub1rHDGDdOs0O0aBlxK3P6HU223/exec";
 
 function formatTimestamp(isoString) {
     const date = new Date(isoString);
@@ -58,9 +58,7 @@ function updateLeaderboard(entries) {
             <td>${entry.teamMembers}</td>
             <td>${entry.timestamp}</td>
             <td></td>
-            <td><a href="#" class="score-link" data-index="${index}">${
-            entry.score
-        }</a></td>
+            <td><a href="#" class="score-link" data-index="${index}">${entry.score}</a></td>
         `;
         leaderboardBody.appendChild(row);
 
