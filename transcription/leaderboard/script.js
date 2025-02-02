@@ -21,7 +21,11 @@ async function fetchLeaderboardData() {
     const cacheTimestamp = localStorage.getItem("leaderboardTimestamp");
 
     // Check if cached data exists and is fresh, within the last minute
-    if (cachedData && cacheTimestamp && Date.now() - cacheTimestamp < 60 * 1000) {
+    if (
+        cachedData &&
+        cacheTimestamp &&
+        Date.now() - cacheTimestamp < 60 * 1000
+    ) {
         console.log("Using preloaded leaderboard data");
         updateLeaderboard(JSON.parse(cachedData)); // Use preloaded data
     } else {
@@ -44,7 +48,10 @@ async function fetchLeaderboardData() {
             leaderboardEntries.sort((a, b) => b.score - a.score);
 
             // Store in cache for next time
-            localStorage.setItem("leaderboardData", JSON.stringify(leaderboardEntries));
+            localStorage.setItem(
+                "leaderboardData",
+                JSON.stringify(leaderboardEntries)
+            );
             localStorage.setItem("leaderboardTimestamp", Date.now());
 
             updateLeaderboard(leaderboardEntries);
@@ -67,7 +74,9 @@ function updateLeaderboard(entries) {
                     <td>${entry.teamMembers}</td>
                     <td>${entry.timestamp}</td>
                     <td>${entry.runtime} ms</td>
-                    <td><a href="#" class="score-link" data-index="${index}">${entry.score}</a></td>
+                    <td><a href="#" class="score-link" data-index="${index}">${
+            entry.score
+        }</a></td>
                 </tr>
             `;
     });
@@ -75,12 +84,14 @@ function updateLeaderboard(entries) {
     leaderboardBody.innerHTML = htmlContent; // Update in one go
 
     // Use event delegation for efficiency
-    document.getElementById("leaderboard-body").addEventListener("click", function (event) {
-        if (event.target.classList.contains("score-link")) {
-            event.preventDefault();
-            showDialogBox(event.target.getAttribute("data-index"));
-        }
-    });
+    document
+        .getElementById("leaderboard-body")
+        .addEventListener("click", function (event) {
+            if (event.target.classList.contains("score-link")) {
+                event.preventDefault();
+                showDialogBox(event.target.getAttribute("data-index"));
+            }
+        });
 
     window.leaderboardEntries = entries;
 }
