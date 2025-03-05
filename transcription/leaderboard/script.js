@@ -41,11 +41,14 @@ async function fetchLeaderboardData() {
                 teamName: row[0],
                 teamMembers: row[1],
                 runtime: row[3],
-                score: +row[4],
+                f1score: +row[4],
+                precision: +row[5],
+                recall: +row[6],
+                overlap: +row[7],
             }));
 
-            // Sort by score descending
-            leaderboardEntries.sort((a, b) => b.score - a.score);
+            // Sort by f1score descending
+            leaderboardEntries.sort((a, b) => b.f1score - a.f1score);
 
             // Store in cache for next time
             localStorage.setItem(
@@ -75,7 +78,7 @@ function updateLeaderboard(entries) {
                     <td>${entry.timestamp}</td>
                     <td>${entry.runtime} ms</td>
                     <td><a href="#" class="score-link" data-index="${index}">${
-            entry.score
+            entry.f1score
         }</a></td>
                 </tr>
             `;
@@ -104,7 +107,10 @@ function showDialogBox(index) {
             <p><strong>Team Members:</strong> ${entry.teamMembers}</p>
             <p><strong>Timestamp:</strong> ${entry.timestamp}</p>
             <p><strong>Runtime:</strong> ${entry.runtime} ms</p>
-            <p><strong>Score:</strong> ${entry.score}</p>
+            <p><strong>F1 Score:</strong> ${entry.f1score}</p>
+            <p><strong>Precision Score:</strong> ${entry.precision}</p>
+            <p><strong>Recall Score:</strong> ${entry.recall}</p>
+            <p><strong>Overlap Score:</strong> ${entry.overlap}</p>
         `;
 
     document.getElementById("leaderboard-container").classList.add("dimmed");
