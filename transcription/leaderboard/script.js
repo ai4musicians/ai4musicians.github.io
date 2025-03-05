@@ -47,6 +47,8 @@ async function fetchLeaderboardData() {
                 overlap: +row[7],
             }));
 
+            window.leaderboardEntries = leaderboardEntries;
+
             // Sort by f1score descending
             leaderboardEntries.sort((a, b) => b.f1score - a.f1score);
 
@@ -95,8 +97,6 @@ function updateLeaderboard(entries) {
                 showDialogBox(event.target.getAttribute("data-index"));
             }
         });
-
-    window.leaderboardEntries = entries;
 }
 
 // Show dialog box with team details
