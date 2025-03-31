@@ -334,39 +334,91 @@
                     <section>
                         <h2>Sample Solution</h2>
                         <p>
-                            As a reference implementation, we present <strong>MT3</strong> (Multi-Task Multitrack Music
-                            Transcription) developed by Google's Magenta team. MT3 is a state-of-the-art model designed
-                            to transcribe music involving multiple instruments simultaneously. It utilizes a
-                            Transformer-based architecture to process audio inputs and generate corresponding musical
-                            notations.
+                            To assist participants in developing their models, we provide a reference implementation of
+                            the <strong>MT3</strong> (Multi-Task Multitrack Music Transcription) model. MT3, developed
+                            by Google's Magenta team, is an advanced model designed to transcribe music involving
+                            multiple instruments simultaneously. It utilizes a Transformer-based architecture to process
+                            audio inputs and generate accurate musical notations.
                         </p>
                         <p>
-                            For a comprehensive understanding of MT3's architecture and implementation, you can refer to
-                            the following resources:
+                            To further support participants, we have created a dedicated repository that adapts MT3 for
+                            the competition environment. This repository demonstrates how to set up and run the model
+                            within the submission framework.
                         </p>
+                        <p>You can access the MT3 competition-ready implementation here:</p>
                         <ul>
                             <li>
-                                Research Paper:
+                                MT3 Competition-Ready Implementation:
+                                <a href="https://github.com/ojas-chaturvedi/mt3-pytorch" target="_blank"
+                                    >github.com/ojas-chaturvedi/mt3-pytorch</a
+                                >
+                            </li>
+                            <li>
+                                Original MT3 Repository by Google Magenta:
+                                <a href="https://github.com/magenta/mt3" target="_blank">github.com/magenta/mt3</a>
+                            </li>
+                            <li>
+                                MT3 Research Paper:
                                 <a
                                     href="https://research.google/pubs/mt3-multi-task-multitrack-music-transcription/"
                                     target="_blank"
                                     >MT3: Multi-Task Multitrack Music Transcription</a
                                 >
                             </li>
+                        </ul>
+
+                        <h3>Additional Sample Implementations</h3>
+                        <p>
+                            In addition to MT3, we provide implementations of two other models to offer a broader
+                            perspective on music transcription approaches.
+                        </p>
+                        <ul>
                             <li>
-                                GitHub Repository:
-                                <a href="https://github.com/magenta/mt3" target="_blank">magenta/mt3</a>
+                                <strong>Basic Pitch by Spotify:</strong> A model designed for robust pitch tracking and
+                                transcription.
+                                <ul>
+                                    <li>
+                                        Implementation:
+                                        <a href="https://github.com/KayshavBhardwaj/basic-pitch-test-1" target="_blank"
+                                            >github.com/KayshavBhardwaj/basic-pitch-test-1</a
+                                        >
+                                    </li>
+                                    <li>
+                                        Research Paper:
+                                        <a href="https://arxiv.org/abs/2203.09893" target="_blank"
+                                            >Basic Pitch: Spotify's Pitch Tracking Model</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>ReconVAT:</strong> A model designed for semi-supervised music transcription
+                                using variational autoencoders.
+                                <ul>
+                                    <li>
+                                        Implementation:
+                                        <a href="https://github.com/ojas-chaturvedi/ReconVAT" target="_blank"
+                                            >github.com/ojas-chaturvedi/ReconVAT</a
+                                        >
+                                    </li>
+                                    <li>
+                                        Research Paper:
+                                        <a href="https://arxiv.org/abs/2107.04954" target="_blank"
+                                            >ReconVAT: Semi-Supervised Learning for Music Transcription</a
+                                        >
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                         <p>
-                            Participants are encouraged to study MT3 as a foundational model to gain insights into
-                            effective music transcription architectures. It serves as a valuable starting point for
-                            developing and refining your own transcription models.
+                            Participants are encouraged to study these implementations as foundational models to gain
+                            insights into effective music transcription architectures. They serve as valuable starting
+                            points for developing and refining your own transcription models.
                         </p>
                         <p>
-                            <strong>Note:</strong> To be considered for a winning submission, your model must achieve a
-                            higher transcription accuracy score compared to MT3. This benchmark ensures that new models
-                            contribute meaningful advancements to the field of music transcription.
+                            <strong>Note:</strong> To qualify as a winning submission, your model must achieve a
+                            transcription accuracy score higher than MT3. This criterion ensures that new models
+                            demonstrate meaningful progress in the field of music transcription.
                         </p>
                     </section>
                 </div>
