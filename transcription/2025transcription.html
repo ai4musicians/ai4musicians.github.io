@@ -166,6 +166,27 @@
                             All paths and directories referenced in the <code>main.py</code> file should be relative to
                             its own location. This ensures compatibility with the backend environment.
                         </p>
+                        <h3>Input File Naming Convention</h3>
+                        <p>
+                            The input audio file names will include the MIDI instrument codes to specify the instruments
+                            used in the recording. The MIDI instrument codes follow the General MIDI standard as
+                            described
+                            <a
+                                href="https://www.ccarh.org/courses/253/handout/gminstruments/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >here</a
+                            >. The file name format will be as follows:
+                        </p>
+                        <p>Example:</p>
+                        <pre><code>1._0_40_70.mp3</code></pre>
+                        <p>
+                            In this example, the numbers 0, 40, and 70 correspond to the MIDI instrument codes of the
+                            instruments present in the audio file. Participants may choose to use this instrument
+                            information or ignore it. However, if the model incorrectly identifies the instruments,
+                            there will be a scoring penalty. The penalty is reduced if the mistake involves instruments
+                            from similar families.
+                        </p>
                         <h3>Submission Process</h3>
                         <p>
                             As long as the submission branch exists and new commits are detected, the system will
