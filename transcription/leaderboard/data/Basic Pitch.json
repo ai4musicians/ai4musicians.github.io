@@ -1,0 +1,23 @@
+[
+    {
+        "Team Name": "Basic Pitch",
+        "Runtime": 2.292,
+        "Performance Score": 0.3825,
+        "Precision": 0.366356,
+        "Recall": 0.405355,
+        "F-measure": 0.382533,
+        "Average_Overlap_Ratio": 0.901787,
+        "Precision_no_offset": 0.793674,
+        "Recall_no_offset": 0.862468,
+        "F-measure_no_offset": 0.821096,
+        "Average_Overlap_Ratio_no_offset": 0.691407,
+        "Onset_Precision": 0.815392,
+        "Onset_Recall": 0.885474,
+        "Onset_F-measure": 0.843272,
+        "Offset_Precision": 0.578491,
+        "Offset_Recall": 0.64061,
+        "Offset_F-measure": 0.603897,
+        "Team Members": "Kayshav Bhardwaj",
+        "Submission Date": "2025-01-30T12:35:06.888Z"
+    }
+]
