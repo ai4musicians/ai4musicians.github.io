@@ -117,6 +117,82 @@
                 </div>
             </section>
 
+            <section class="wrapper style6 fade-up">
+                <div class="inner">
+                    <section>
+                        <h2>Submission Details</h2>
+                        <p>
+                            Participants who have registered for the competition must follow these guidelines for
+                            submitting their models:
+                        </p>
+                        <h3>Repository Access</h3>
+                        <p>
+                            During registration, participants are required to provide a link to their code repository
+                            along with a fine-grained access token. This token is necessary for the competition backend
+                            to pull the model for execution.
+                        </p>
+                        <h3>Submission Branch</h3>
+                        <p>
+                            To submit a model, participants must create a branch titled <code>submission</code> in their
+                            repository. The competition backend will automatically pull from this branch to run the
+                            model.
+                        </p>
+                        <p>Submissions are validated if the following conditions are met:</p>
+                        <ul>
+                            <li>The branch titled <code>submission</code> exists.</li>
+                            <li>New commits have been made to the branch since the last successful run.</li>
+                        </ul>
+                        <h3>Environment Configuration</h3>
+                        <p>
+                            Participants must include an <code>environment.yml</code> file in the root directory of
+                            their GitHub repository. This file will be used to create a conda environment during the
+                            model execution. Please ensure that the environment file correctly specifies all
+                            dependencies and versions required to run the model.
+                        </p>
+                        <h3>Model Execution Requirements</h3>
+                        <p>
+                            To run the model, the repository must contain a file named <code>main.py</code> located in
+                            the root directory. This script must accept the following command-line arguments:
+                        </p>
+                        <ul>
+                            <li><code>-i</code>: Path to the input audio file (in .mp3 format).</li>
+                            <li><code>-o</code>: Path to save the output MIDI file.</li>
+                        </ul>
+                        <p>Example usage:</p>
+                        <pre><code>python main.py -i input.mp3 -o output.midi</code></pre>
+                        <p>
+                            All paths and directories referenced in the <code>main.py</code> file should be relative to
+                            its own location. This ensures compatibility with the backend environment.
+                        </p>
+                        <h3>Submission Process</h3>
+                        <p>
+                            As long as the submission branch exists and new commits are detected, the system will
+                            automatically run the model. The backend will handle the following:
+                        </p>
+                        <ul>
+                            <li>Pulling the latest code from the <code>submission</code> branch.</li>
+                            <li>Creating a conda environment using the provided <code>environment.yml</code> file.</li>
+                            <li>Executing the model using the specified command.</li>
+                            <li>Sending email notifications to the participant, including:</li>
+                            <ul>
+                                <li>Status updates on the model run.</li>
+                                <li>Input and output of the model.</li>
+                                <li>Performance statistics of the model.</li>
+                                <li>
+                                    The SLURM job output, allowing the participant to verify that the backend
+                                    successfully processed their model.
+                                </li>
+                            </ul>
+                        </ul>
+                        <h3>Model Weights</h3>
+                        <p>
+                            Participants may use Git LFS (Large File Storage) for managing model weights within their
+                            repository. The backend supports Git LFS, so there are no restrictions on using large files.
+                        </p>
+                    </section>
+                </div>
+            </section>
+
             <section class="wrapper style3 fade-up">
                 <div class="inner">
                     <section>
