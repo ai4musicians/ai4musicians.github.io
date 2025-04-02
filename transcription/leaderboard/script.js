@@ -161,7 +161,6 @@ function showDialogBox(f1score) {
                 <p><strong>Precision Score:</strong> ${jsonData[0].Precision}</p>
                 <p><strong>Recall Score:</strong> ${jsonData[0].Recall}</p>
                 <p><strong>Overlap Score:</strong> ${jsonData[0].Average_Overlap_Ratio}</p>
-                <p><strong>Additional Info:</strong> ${jsonData.additionalInfo}</p>
             `;
 
             document
