@@ -2797,6 +2797,18 @@ input[type="radio"] + label:before {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.centered-image:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
 /* List */
 
 ol {
@@ -4241,12 +4253,6 @@ body.is-preload #sidebar nav ul li {
 .team-member:hover {
     transform: translateY(-5px); /* Lift on hover */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.centered-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .team-photo .profile-img {
