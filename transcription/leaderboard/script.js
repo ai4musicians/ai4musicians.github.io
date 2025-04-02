@@ -187,7 +187,6 @@ function fetchJsonFile(teamName) {
             return response.json();
         })
         .then((data) => {
-            console.log("Fetched JSON data:", data);
             return data;
         })
         .catch((error) => {
