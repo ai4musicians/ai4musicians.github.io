@@ -1,0 +1,23 @@
+[
+    {
+        "Team Name": "Bytedance Piano transcription",
+        "Runtime": 8.1519,
+        "Performance Score": 0.671,
+        "Precision": 0.699464,
+        "Recall": 0.650914,
+        "F-measure": 0.671017,
+        "Average_Overlap_Ratio": 0.933072,
+        "Precision_no_offset": 0.952861,
+        "Recall_no_offset": 0.861583,
+        "F-measure_no_offset": 0.897143,
+        "Average_Overlap_Ratio_no_offset": 0.793938,
+        "Onset_Precision": 0.974172,
+        "Onset_Recall": 0.878562,
+        "Onset_F-measure": 0.915936,
+        "Offset_Precision": 0.809707,
+        "Offset_Recall": 0.736432,
+        "Offset_F-measure": 0.765465,
+        "Team Members": "AI for Musicians",
+        "Submission Date": "N/A"
+    }
+]
