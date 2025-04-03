@@ -1,10 +1,10 @@
 [
     {
-        "Team Name": "MT3 PyTorch",
-        "Runtime": 19.2864,
-        "Performance Score": 0.7193,
-        "Precision": 0.734572,
-        "Recall": 0.706786,
+        "Team Name": "MR MT3",
+        "Runtime": 4.2343,
+        "Performance Score": 0.2524,
+        "Precision": 0.1,
+        "Recall": 0.1,
         "F-measure": 0.719388,
         "Average_Overlap_Ratio": 0.931763,
         "Precision_no_offset": 0.906387,
@@ -17,7 +17,7 @@
         "Offset_Precision": 0.830558,
         "Offset_Recall": 0.796375,
         "Offset_F-measure": 0.811387,
-        "Team Members": "Ojas Chaturvedi, Testing 1",
-        "Submission Date": "2025-01-30T12:35:06.888Z"
+        "Team Members": "Ankur Senapati, Testing 2",
+        "Submission Date": "2025-01-30T12:34:06.888Z"
     }
 ]
