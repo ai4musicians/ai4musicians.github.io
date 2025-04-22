@@ -81,13 +81,12 @@ function updateLeaderboard(entries) {
 
 // Show dialog box with team details
 function showDialogBox(f1score) {
-    // const entry = findJsonFile(f1score);
-
-    const entry = window.leaderboardEntries.find((entry) => entry.f1score == f1score);
+    const entry = window.leaderboardEntries.find((e) => e.f1score == f1score);
 
     fetchJsonFile(entry.teamName).then((jsonData) => {
-        if (jsonData) {
-            document.getElementById("dialogContent").innerHTML = `
+        if (!jsonData) return;
+
+        document.getElementById("dialogContent").innerHTML = `
                 <p><strong>Team Name:</strong> ${entry.teamName}</p>
                 <p><strong>Team Members:</strong> ${entry.teamMembers}</p>
                 <p><strong>Timestamp:</strong> ${entry.timestamp}</p>
@@ -98,9 +97,8 @@ function showDialogBox(f1score) {
                 <p><strong>Overlap Score:</strong> ${jsonData[0].Average_Overlap_Ratio}</p>
             `;
 
-            document.getElementById("leaderboard-container").classList.add("dimmed");
-            document.getElementById("dialogBox").style.display = "inline";
-        }
+        document.getElementById("dialogOverlay").classList.add("active");
+        document.getElementById("dialogBox").classList.add("active");
     });
 }
 
@@ -126,8 +124,8 @@ function fetchJsonFile(teamName) {
 
 // Close dialog box
 function closeDialogBox() {
-    document.getElementById("leaderboard-container").classList.remove("dimmed");
-    document.getElementById("dialogBox").style.display = "none";
+    document.getElementById("dialogOverlay").classList.remove("active");
+    document.getElementById("dialogBox").classList.remove("active");
 }
 
 // Fetch leaderboard on page load
