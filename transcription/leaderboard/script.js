@@ -28,7 +28,9 @@ function parseCSV(csvContent) {
     console.log("CSV Rows:", rows);
     const leaderboardEntries = [];
     rows.slice(1).map((row) => {
-        const columns = row.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g).map((col) => col.replace(/^"|"$/g, ""));
+        const columns = row
+            .match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g)
+            .map((col) => col.replace(/^"|"$/g, ""));
         leaderboardEntries.push({
             teamName: columns[0],
             teamMembers: columns[1], // This will correctly handle quoted team member names
@@ -60,10 +62,11 @@ function updateLeaderboard(entries) {
                 <tr>
                     <td>${index + 1}</td>
                     <td>${entry.teamName}</td>
-                    <td>${entry.teamMembers}</td>
                     <td>${entry.timestamp}</td>
                     <td>${entry.runtime} ms</td>
-                    <td><a href="#" class="score-link" data-index="${entry.f1score}">${entry.f1score}</a></td>
+                    <td><a href="#" class="score-link" data-index="${
+                        entry.f1score
+                    }">${entry.f1score}</a></td>
                 </tr>
             `;
     });
@@ -71,12 +74,14 @@ function updateLeaderboard(entries) {
     leaderboardBody.innerHTML = htmlContent; // Update in one go
 
     // Use event delegation for efficiency
-    document.getElementById("leaderboard-body").addEventListener("click", function (event) {
-        if (event.target.classList.contains("score-link")) {
-            event.preventDefault();
-            showDialogBox(event.target.getAttribute("data-index"));
-        }
-    });
+    document
+        .getElementById("leaderboard-body")
+        .addEventListener("click", function (event) {
+            if (event.target.classList.contains("score-link")) {
+                event.preventDefault();
+                showDialogBox(event.target.getAttribute("data-index"));
+            }
+        });
 }
 
 // Show dialog box with team details
@@ -110,7 +115,9 @@ function fetchJsonFile(teamName) {
     return fetch(jsonFilePath)
         .then((response) => {
             if (!response.ok) {
-                throw new Error(`Error fetching JSON file for team: ${teamName}`);
+                throw new Error(
+                    `Error fetching JSON file for team: ${teamName}`
+                );
             }
             return response.json();
         })
