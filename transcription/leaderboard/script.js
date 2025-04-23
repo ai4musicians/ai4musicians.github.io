@@ -93,7 +93,7 @@ function showDialogBox(f1score) {
 
         document.getElementById("dialogContent").innerHTML = `
                 <p><strong>Team Name:</strong> ${entry.teamName}</p>
-                <p><strong>Team Members:</strong> ${entry.teamMembers}</p>
+                <p><strong>Team Members:</strong> ${jsonData[0].teamMembers}</p>
                 <p><strong>Timestamp:</strong> ${entry.timestamp}</p>
                 <p><strong>Runtime:</strong> ${entry.runtime} ms</p>
                 <p><strong>F1 Score:</strong> ${entry.f1score}</p>
