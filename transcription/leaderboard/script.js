@@ -34,6 +34,7 @@ function parseCSV(csvContent) {
         leaderboardEntries.push({
             teamName: columns[0],
             timestamp: formatTimestamp(columns[2]),
+            teamMembers: columns[1],
             runtime: columns[3],
             f1score: parseFloat(columns[4]),
         });
@@ -69,7 +70,7 @@ function updateLeaderboard(entries) {
                 </tr>
             `;
     });
-
+    console.log("HTML Content:", htmlContent);
     leaderboardBody.innerHTML = htmlContent; // Update in one go
 
     // Use event delegation for efficiency
