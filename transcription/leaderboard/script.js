@@ -33,7 +33,6 @@ function parseCSV(csvContent) {
             .map((col) => col.replace(/^"|"$/g, ""));
         leaderboardEntries.push({
             teamName: columns[0],
-            teamMembers: columns[1], // This will correctly handle quoted team member names
             timestamp: formatTimestamp(columns[2]),
             runtime: columns[3],
             f1score: parseFloat(columns[4]),
