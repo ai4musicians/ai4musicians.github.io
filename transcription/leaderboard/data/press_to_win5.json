@@ -1,0 +1,23 @@
+[
+    {
+        "Team Name": "press_to_win5",
+        "Runtime": 21.1918,
+        "Performance Score": 0.184,
+        "Precision": 0.173086,
+        "Recall": 0.2139,
+        "F-measure": 0.184064,
+        "Average_Overlap_Ratio": 0.719702,
+        "Precision_no_offset": 0.306537,
+        "Recall_no_offset": 0.399633,
+        "F-measure_no_offset": 0.332224,
+        "Average_Overlap_Ratio_no_offset": 0.530953,
+        "Onset_Precision": 0.361573,
+        "Onset_Recall": 0.501379,
+        "Onset_F-measure": 0.399928,
+        "Offset_Precision": 0.413423,
+        "Offset_Recall": 0.587644,
+        "Offset_F-measure": 0.46264,
+        "Team Members": "Rudakov Evgenii",
+        "Submission Date": "2025-05-06"
+    }
+]
