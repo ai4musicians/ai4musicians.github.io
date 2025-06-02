@@ -19,5 +19,26 @@
         "Offset_F-measure": 0.599809,
         "Team Members": "Nada Sharaf, Ohoude Khadr , Ayman Moner, Clara Zaher , Feras Elkharrat, ",
         "Submission Date": "2025-05-06"
+    },
+    {
+        "Team Name": "GIU",
+        "Runtime": 21.8807,
+        "Performance Score": 0.3932,
+        "Precision": 0.38112,
+        "Recall": 0.411528,
+        "F-measure": 0.393214,
+        "Average_Overlap_Ratio": 0.71797,
+        "Precision_no_offset": 0.565356,
+        "Recall_no_offset": 0.614504,
+        "F-measure_no_offset": 0.584577,
+        "Average_Overlap_Ratio_no_offset": 0.619921,
+        "Onset_Precision": 0.663145,
+        "Onset_Recall": 0.726103,
+        "Onset_F-measure": 0.687734,
+        "Offset_Precision": 0.63501,
+        "Offset_Recall": 0.698339,
+        "Offset_F-measure": 0.659656,
+        "Team Members": "Nada Sharaf, Ohoude Khadr , Ayman Moner, Clara Zaher , Feras Elkharrat, ",
+        "Submission Date": "2025-06-02"
     }
 ]

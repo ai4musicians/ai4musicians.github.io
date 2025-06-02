@@ -19,5 +19,26 @@
         "Offset_F-measure": 0.613482,
         "Team Members": "Sungkyun Chang, Simon Dixon, Emmanouil Benetos",
         "Submission Date": "2025-05-08"
+    },
+    {
+        "Team Name": "YourMT3-YPTF-MoE-MP",
+        "Runtime": 16.0262,
+        "Performance Score": 0.2173,
+        "Precision": 0.214966,
+        "Recall": 0.220641,
+        "F-measure": 0.217338,
+        "Average_Overlap_Ratio": 0.611634,
+        "Precision_no_offset": 0.297956,
+        "Recall_no_offset": 0.306987,
+        "F-measure_no_offset": 0.301716,
+        "Average_Overlap_Ratio_no_offset": 0.557538,
+        "Onset_Precision": 0.696075,
+        "Onset_Recall": 0.719896,
+        "Onset_F-measure": 0.70555,
+        "Offset_Precision": 0.699835,
+        "Offset_Recall": 0.72405,
+        "Offset_F-measure": 0.709509,
+        "Team Members": "Sungkyun Chang, Simon Dixon, Emmanouil Benetos",
+        "Submission Date": "2025-06-02"
     }
 ]

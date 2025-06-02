@@ -19,5 +19,26 @@
         "Offset_F-measure": 0.479576,
         "Team Members": "Rudakov Evgenii",
         "Submission Date": "2025-05-06"
+    },
+    {
+        "Team Name": "press_to_win4",
+        "Runtime": 16.4074,
+        "Performance Score": 0.2168,
+        "Precision": 0.214425,
+        "Recall": 0.220305,
+        "F-measure": 0.216898,
+        "Average_Overlap_Ratio": 0.615865,
+        "Precision_no_offset": 0.299613,
+        "Recall_no_offset": 0.309205,
+        "F-measure_no_offset": 0.303644,
+        "Average_Overlap_Ratio_no_offset": 0.559451,
+        "Onset_Precision": 0.695068,
+        "Onset_Recall": 0.71957,
+        "Onset_F-measure": 0.704887,
+        "Offset_Precision": 0.699105,
+        "Offset_Recall": 0.723929,
+        "Offset_F-measure": 0.709089,
+        "Team Members": "Rudakov Evgenii",
+        "Submission Date": "2025-06-02"
     }
 ]

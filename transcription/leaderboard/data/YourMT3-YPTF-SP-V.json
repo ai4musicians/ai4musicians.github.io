@@ -1,0 +1,23 @@
+[
+    {
+        "Team Name": "YourMT3-YPTF-SP-V",
+        "Runtime": 14.5031,
+        "Performance Score": 0.3305,
+        "Precision": 0.32796,
+        "Recall": 0.335827,
+        "F-measure": 0.330591,
+        "Average_Overlap_Ratio": 0.714713,
+        "Precision_no_offset": 0.447407,
+        "Recall_no_offset": 0.459985,
+        "F-measure_no_offset": 0.451669,
+        "Average_Overlap_Ratio_no_offset": 0.63869,
+        "Onset_Precision": 0.632511,
+        "Onset_Recall": 0.657221,
+        "Onset_F-measure": 0.641741,
+        "Offset_Precision": 0.686195,
+        "Offset_Recall": 0.711273,
+        "Offset_F-measure": 0.695724,
+        "Team Members": "Sungkyun Chang, Simon Dixon, Emmanouil Benetos",
+        "Submission Date": "2025-06-02"
+    }
+]

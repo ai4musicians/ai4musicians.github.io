@@ -19,5 +19,26 @@
         "Offset_F-measure": 0.056892,
         "Team Members": "Rintaro Yamamoto, Shunya Ishikawa, Hideki Nakayama, Toru Nakashika",
         "Submission Date": "2025-04-30"
+    },
+    {
+        "Team Name": "Midnight Questor",
+        "Runtime": 30.2825,
+        "Performance Score": 0.0,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F-measure": 0.0,
+        "Average_Overlap_Ratio": 0.0,
+        "Precision_no_offset": 0.010075,
+        "Recall_no_offset": 0.029347,
+        "F-measure_no_offset": 0.014375,
+        "Average_Overlap_Ratio_no_offset": 0.014274,
+        "Onset_Precision": 0.023373,
+        "Onset_Recall": 0.062598,
+        "Onset_F-measure": 0.032063,
+        "Offset_Precision": 0.027774,
+        "Offset_Recall": 0.087681,
+        "Offset_F-measure": 0.040218,
+        "Team Members": "Rintaro Yamamoto, Shunya Ishikawa, Hideki Nakayama, Toru Nakashika",
+        "Submission Date": "2025-06-02"
     }
 ]
