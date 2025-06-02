@@ -19,5 +19,26 @@
         "Offset_F-measure": 0.467572,
         "Team Members": "Qiuqiang Kong, Bochen Li, Xuchen Song, Yuan Wan, Yuxuan Wang",
         "Submission Date": "2025-06-01"
+    },
+    {
+        "Team Name": "Bytedance Piano transcription",
+        "Runtime": 9.6727,
+        "Performance Score": 0.1721,
+        "Precision": 0.204096,
+        "Recall": 0.168855,
+        "F-measure": 0.172101,
+        "Average_Overlap_Ratio": 0.542295,
+        "Precision_no_offset": 0.39679,
+        "Recall_no_offset": 0.320841,
+        "F-measure_no_offset": 0.329154,
+        "Average_Overlap_Ratio_no_offset": 0.46257,
+        "Onset_Precision": 0.443425,
+        "Onset_Recall": 0.352462,
+        "Onset_F-measure": 0.360266,
+        "Offset_Precision": 0.642289,
+        "Offset_Recall": 0.466727,
+        "Offset_F-measure": 0.481474,
+        "Team Members": "Qiuqiang Kong, Bochen Li, Xuchen Song, Yuan Wan, Yuxuan Wang",
+        "Submission Date": "2025-06-02"
     }
 ]
