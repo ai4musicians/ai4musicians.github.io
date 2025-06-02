@@ -1,0 +1,23 @@
+[
+    {
+        "Team Name": "YourMT3-P",
+        "Runtime": 12.4276,
+        "Performance Score": 0.2814,
+        "Precision": 0.283154,
+        "Recall": 0.283584,
+        "F-measure": 0.281465,
+        "Average_Overlap_Ratio": 0.750114,
+        "Precision_no_offset": 0.470981,
+        "Recall_no_offset": 0.474413,
+        "F-measure_no_offset": 0.468728,
+        "Average_Overlap_Ratio_no_offset": 0.643817,
+        "Onset_Precision": 0.49317,
+        "Onset_Recall": 0.498036,
+        "Onset_F-measure": 0.491339,
+        "Offset_Precision": 0.599136,
+        "Offset_Recall": 0.606537,
+        "Offset_F-measure": 0.597228,
+        "Team Members": "Sungkyun Chang, Simon Dixon, Emmanouil Benetos",
+        "Submission Date": "2025-05-08"
+    }
+]
