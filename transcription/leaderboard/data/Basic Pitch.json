@@ -1,0 +1,23 @@
+[
+    {
+        "Team Name": "Basic Pitch",
+        "Runtime": 3.9056,
+        "Performance Score": 0.0634,
+        "Precision": 0.054995,
+        "Recall": 0.078152,
+        "F-measure": 0.063433,
+        "Average_Overlap_Ratio": 0.597734,
+        "Precision_no_offset": 0.194673,
+        "Recall_no_offset": 0.253365,
+        "F-measure_no_offset": 0.216346,
+        "Average_Overlap_Ratio_no_offset": 0.50544,
+        "Onset_Precision": 0.264086,
+        "Onset_Recall": 0.337363,
+        "Onset_F-measure": 0.290772,
+        "Offset_Precision": 0.444662,
+        "Offset_Recall": 0.587456,
+        "Offset_F-measure": 0.495507,
+        "Team Members": "Spotify's Audio Intelligence Lab: Rachel M. Bittner, Juan Jos\u00e9 Bosch, David Rubinstein, Gabriel Meseguer-Brocal, Sebastian Ewert",
+        "Submission Date": "2025-06-02"
+    }
+]
