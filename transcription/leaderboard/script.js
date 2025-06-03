@@ -1,5 +1,4 @@
 const CSV_URL = "leaderboard/leaderboard.csv";
-const jsondirectoryPath = "./data/ReconVAT.json";
 
 // Function to format timestamps efficiently
 function formatTimestamp(isoString) {
@@ -43,8 +42,13 @@ function parseCSV(csvContent) {
     localStorage.setItem("leaderboardData", JSON.stringify(leaderboardEntries));
     localStorage.setItem("leaderboardTimestamp", Date.now());
 
-    // Sort by f1score descending
-    leaderboardEntries.sort((a, b) => b.f1score - a.f1score);
+    // Sort by f1score descending, if equal, sort by runtime ascending
+    leaderboardEntries.sort((a, b) => {
+        if (b.f1score === a.f1score) {
+            return a.runtime - b.runtime; // Sort by runtime ascending if f1score is equal
+        }
+        return b.f1score - a.f1score; // Sort by f1score descending
+    });
 
     // Update the leaderboard
     updateLeaderboard(leaderboardEntries);
