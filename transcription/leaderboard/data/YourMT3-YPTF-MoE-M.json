@@ -1,27 +1,6 @@
 [
     {
         "Team Name": "YourMT3-YPTF-MoE-M",
-        "Runtime": 11.698,
-        "Performance Score": 0.4393,
-        "Precision": 0.446472,
-        "Recall": 0.434064,
-        "F-measure": 0.439371,
-        "Average_Overlap_Ratio": 0.749879,
-        "Precision_no_offset": 0.67094,
-        "Recall_no_offset": 0.654517,
-        "F-measure_no_offset": 0.661398,
-        "Average_Overlap_Ratio_no_offset": 0.661514,
-        "Onset_Precision": 0.687518,
-        "Onset_Recall": 0.671329,
-        "Onset_F-measure": 0.678043,
-        "Offset_Precision": 0.660164,
-        "Offset_Recall": 0.640905,
-        "Offset_F-measure": 0.648926,
-        "Team Members": "Sungkyun Chang, Simon Dixon, Emmanouil Benetos",
-        "Submission Date": "2025-05-07"
-    },
-    {
-        "Team Name": "YourMT3-YPTF-MoE-M",
         "Runtime": 14.6267,
         "Performance Score": 0.2173,
         "Precision": 0.214966,
