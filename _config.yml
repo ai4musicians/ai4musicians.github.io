@@ -1,0 +1,14 @@
+title: "AI (Artificial Intelligence) for Musicians"
+description: "Purdue music technology research group creating reactive, human-like systems to support musicians."
+url: "https://ai4musicians.org"
+baseurl: ""
+markdown: kramdown
+plugins: []
+exclude:
+  - README.md
+  - LICENSE
+  - LICENSE.txt
+  - node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock

@@ -161,3 +161,17 @@ cython_debug/
 
 # Mac Finder
 .DS_Store
+
+# Jekyll build artifacts
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Sass cache
+.sass-cache/
+
+# Bundler install path (if used)
+vendor/bundle/
+
+# Optional: local Ruby/Bundler config
+.bundle/

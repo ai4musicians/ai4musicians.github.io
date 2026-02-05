@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<!--
+    Hyperspace by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="{{ page.lang | default: 'en' }}" xml:lang="{{ page.lang | default: 'en' }}">
+<head>
+    <title>{{ page.title | default: site.title }}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}" />
+    {% endif %}
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+    <noscript>
+        <link rel="stylesheet" href="{{ '/assets/css/noscript.css' | relative_url }}" />
+    </noscript>
+    <link rel="icon" type="image/x-icon" href="{{ '/assets/favicon.png' | relative_url }}" />
+    {% if page.extra_head %}
+    {{ page.extra_head }}
+    {% endif %}
+</head>
+<body class="{{ page.body_class | default: 'is-preload' }}">
+    {{ content }}
+
+    {% unless page.skip_scripts %}
+    <script src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/jquery.scrollex.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/jquery.scrolly.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/browser.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/breakpoints.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/util.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    {% endunless %}
+</body>
+</html>
